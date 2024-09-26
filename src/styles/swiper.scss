@@ -1,0 +1,30 @@
+.swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.swiper-pagination-bullet:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #3298cb;
+}
+
+@media only screen and (min-width: 900px) {
+  .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+  }
+  .swiper-pagination-bullet:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}

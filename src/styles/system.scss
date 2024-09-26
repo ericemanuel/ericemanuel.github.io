@@ -1,0 +1,177 @@
+/* weights
+--------------------------------------------- */
+$light: 300;
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+
+/* font-faces
+--------------------------------------------- */
+@font-face {
+  font-family: 'eina';
+  font-style: normal;
+  font-weight: $light;
+  src: url('@/assets/fonts/eina-light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'eina';
+  font-style: italic;
+  font-weight: $light;
+  src: url('@/assets/fonts/eina-lightitalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'eina';
+  font-style: normal;
+  font-weight: $regular;
+  src: url('@/assets/fonts/eina-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'eina';
+  font-style: italic;
+  font-weight: $regular;
+  src: url('@/assets/fonts/eina-italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'eina';
+  font-style: normal;
+  font-weight: $semibold;
+  src: url('@/assets/fonts/eina-semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'eina';
+  font-style: italic;
+  font-weight: $semibold;
+  src: url('@/assets/fonts/eina-semibolditalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'eina';
+  font-style: normal;
+  font-weight: $bold;
+  src: url('@/assets/fonts/eina-bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'eina';
+  font-style: italic;
+  font-weight: $bold;
+  src: url('@/assets/fonts/eina-bolditalic.woff2') format('woff2');
+}
+
+/* colors
+--------------------------------------------- */
+$onyx: #181818;
+$navy: #142332;
+$slate: #283c50;
+$teal: #2b778e;
+$sky: #3298cb;
+$azure: #73afd7;
+$cyan: #38bfc3;
+$white: #fff;
+
+/* assignments
+--------------------------------------------- */
+@mixin peta {
+  font-family: 'eina';
+  font-weight: $semibold;
+  font-size: 64px;
+  line-height: 76px;
+  color: $white;
+}
+
+@mixin tera {
+  font-family: 'eina';
+  font-weight: $semibold;
+  font-size: 40px;
+  line-height: 48px;
+  color: $white;
+}
+
+@mixin giga {
+  font-family: 'eina';
+  font-weight: $regular;
+  font-size: 36px;
+  line-height: 44px;
+  color: $white;
+}
+
+@mixin mega {
+  font-family: 'eina';
+  font-weight: $regular;
+  font-size: 28px;
+  line-height: 32px;
+  color: $white;
+}
+
+@mixin kilo {
+  font-family: 'eina';
+  font-weight: $regular;
+  font-size: 24px;
+  line-height: 28px;
+  color: $white;
+}
+
+@mixin base($variant: regular) {
+  font-family: 'eina';
+  font-weight: $regular;
+  font-size: 20px;
+  line-height: 24px;
+  color: $white;
+
+  @if $variant == emphasis {
+    font-weight: $bold;
+    font-style: italic;
+    background: -webkit-linear-gradient(0deg, #3298cb, #38bfc3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@mixin mili {
+  font-family: 'eina';
+  font-weight: $regular;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+}
+
+@mixin micro($variant: regular) {
+  font-family: 'eina';
+  font-weight: $regular;
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+
+  @if $variant == emphasis {
+    font-weight: $bold;
+    font-style: italic;
+    background: -webkit-linear-gradient(0deg, #3298cb, #38bfc3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@mixin nano {
+  font-family: 'eina';
+  font-weight: 300;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+}
+
+@mixin pico {
+  font-family: 'eina';
+  font-weight: 300;
+  font-style: italic;
+  font-size: 10px;
+  line-height: 12px;
+  color: $white;
+}
