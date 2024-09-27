@@ -38,7 +38,6 @@
         <div class="links">
           <icon link="#" icon="whatsapp" alt="Whatsapp" />
           <icon link="#" icon="instagram" alt="Instagram" />
-          <icon link="#" icon="facebook" alt="Facebook" />
           <icon link="#" icon="linkedin" alt="LinkedIn" />
         </div>
       </div>
@@ -146,8 +145,8 @@ export default {
         },
         {
           link: '/portfolio/radio',
-          logo: 'imusica',
-          logo_alt: 'iMusica',
+          logo: 'sesc',
+          logo_alt: 'Sesc',
           icon: 'play',
           icon_alt: 'Play',
           category: 'UX Design',
