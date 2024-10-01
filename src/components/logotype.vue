@@ -2,7 +2,7 @@
   <nav id="logotype">
     <div class="container">
       <router-link to="/">
-        <img src="@/assets/logos/ericemanuel.svg" alt="Eric Emanuel" />
+        <img src="@/assets/vectors/logos/ericemanuel.svg" alt="Eric Emanuel" />
       </router-link>
     </div>
   </nav>

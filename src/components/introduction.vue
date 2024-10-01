@@ -20,7 +20,10 @@
         </div>
         <div>
           <span><em>Cliente</em></span>
-          <img :src="require('@/assets/logos/' + logo + '.svg')" :alt="alt" />
+          <img
+            :src="require('@/assets/vectors/brands/' + brand + '.svg')"
+            :alt="alt"
+          />
         </div>
         <div>
           <span><em>Habilidades</em></span>

@@ -1,6 +1,9 @@
 <template>
   <a :href="link">
-    <img :src="require('@/assets/logos/' + icon + '.svg')" :alt="alt" />
+    <img
+      :src="require('@/assets/vectors/brands/' + icon + '.svg')"
+      :alt="alt"
+    />
   </a>
 </template>
 

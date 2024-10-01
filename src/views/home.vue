@@ -15,7 +15,7 @@
         <slide
           :title="slide.title"
           :description="slide.description"
-          :icon="slide.icon"
+          :illustration="slide.illustration"
           :alt="slide.alt"
         />
       </swiper-slide>
@@ -50,11 +50,11 @@
       <card
         v-for="card in cards"
         :link="card.link"
-        :logo="card.logo"
-        :logo_alt="card.alt"
-        :icon="card.icon"
-        :icon_alt="card.alt"
-        :category="card.category"
+        :brand="card.brand"
+        :brand_alt="card.brand_alt"
+        :illustration="card.illustration"
+        :illustration_alt="card.illustration_alt"
+        :label="card.label"
         :title="card.title"
       />
     </div>
@@ -81,85 +81,85 @@ export default {
           title: 'Designer e<br> desenvolvedor',
           description:
             'As soluções <em>bonitas e funcionais</em> que você<br> precisa, juntas em um único profissional.',
-          icon: 'gears',
+          illustration: 'gears',
           alt: 'Engrenagens',
         },
         {
           title: 'Publicidade<br> com impacto',
           description:
             'Comunicações que <em>valorizam o seu negócio</em><br> e fazem seus resultados decolarem!',
-          icon: 'rocket',
+          illustration: 'rocket',
           alt: 'Foguete',
         },
         {
           title: 'Criatividade<br> em tudo',
           description:
             'Para cada trabalho <em>uma inspiração única,</em><br> para cada marca uma nova perspectiva.',
-          icon: 'head',
+          illustration: 'head',
           alt: 'Criatividade',
         },
         {
           title: 'Paixão pelo<br> o que faço',
           description:
             'Para gerar <em>resultados incríveis</em><br> é preciso amar o que se faz!',
-          icon: 'fire',
+          illustration: 'fire',
           alt: 'Fogo',
         },
       ],
       cards: [
         {
-          link: '/portfolio/montehermom',
-          logo: 'montehermom',
-          logo_alt: 'Monte Hermom',
-          icon: 'cross',
-          icon_alt: 'Cruz',
-          category: 'Um pouco de tudo',
-          title: 'Tecnologia<br> para dar vida',
+          link: '/portfolio/clientportal',
+          brand: 'clearsale',
+          brand_alt: 'ClearSale',
+          illustration: 'globe',
+          illustration_alt: 'Globo',
+          label: 'Design',
+          title: 'Uma interface para todos',
         },
         {
           link: '/portfolio/soul',
-          logo: 'puc-rio',
-          logo_alt: 'Puc-Rio',
-          icon: 'mind',
-          icon_alt: 'Mente',
-          category: 'Desenvolvimento',
-          title: 'Um app que lê<br> pensamentos',
+          brand: 'puc-rio',
+          brand_alt: 'Puc-Rio',
+          illustration: 'mind',
+          illustration_alt: 'Mente',
+          label: 'Desenvolvimento',
+          title: 'Um app que lê pensamentos',
         },
         {
-          link: '/portfolio/designsystem',
-          logo: 'sesc',
-          logo_alt: 'Sesc',
-          icon: 'ds',
-          icon_alt: 'Design System',
-          category: 'UX Design',
-          title: 'Uma interface<br> para todos',
+          link: '/portfolio/sitedosesc',
+          brand: 'sesc',
+          brand_alt: 'Sesc',
+          illustration: 'link',
+          illustration_alt: 'Link',
+          label: 'Design',
+          title: 'Conectando culturas',
         },
         {
           link: '/portfolio/sesc+',
-          logo: 'sesc',
-          logo_alt: 'Sesc',
-          icon: 'head',
-          icon_alt: 'Head',
-          category: 'UX Design',
+          brand: 'sesc',
+          brand_alt: 'Sesc',
+          illustration: 'head',
+          illustration_alt: 'Head',
+          label: 'UX Design',
           title: 'A experiência<br> de explorar',
         },
         {
-          link: '/portfolio/radio',
-          logo: 'sesc',
-          logo_alt: 'Sesc',
-          icon: 'play',
-          icon_alt: 'Play',
-          category: 'UX Design',
-          title: 'Música de um<br> jeito diferente',
+          link: '/portfolio/montehermom',
+          brand: 'montehermom',
+          brand_alt: 'Monte Hermom',
+          illustration: 'cross',
+          illustration_alt: 'Cruz',
+          label: 'Um pouco de tudo',
+          title: 'Tecnologia para dar vida',
         },
         {
-          link: '/portfolio/ericemanuel',
-          logo: 'ericemanuel',
-          logo_alt: 'Eric Emanuel',
-          icon: 'ee',
-          icon_alt: 'EE',
-          category: 'Direção de arte',
-          title: 'Minha própria<br> identidade',
+          link: '/portfolio/gamechanger',
+          brand: 'uerj',
+          brand_alt: 'Uerj',
+          illustration: 'block',
+          illustration_alt: 'Bloco',
+          label: 'Desenvolvimento',
+          title: 'O jogo da inovação',
         },
       ],
     };

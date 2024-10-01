@@ -1,7 +1,7 @@
 <template>
   <router-link id="logo" to="/">
     <div class="container">
-      <img src="@/assets/logos/ee.svg" alt="Eric Emanuel" />
+      <img src="@/assets/vectors/logos/ee.svg" alt="Eric Emanuel" />
     </div>
   </router-link>
 </template>
@@ -17,6 +17,7 @@ img {
   margin: 0 auto;
   width: 40px;
   background: -webkit-linear-gradient(0deg, #3298cb, #38bfc3);
+  background-clip: text;
   -webkit-background-clip: text;
 }
 

@@ -1,17 +1,17 @@
 <template>
   <router-link :to="link">
     <img
-      class="logo"
-      :src="require('@/assets/logos/' + logo + '.svg')"
-      :alt="logo_alt"
+      class="brand"
+      :src="require('@/assets/vectors/brands/' + brand + '.svg')"
+      :alt="brand_alt"
     />
     <img
-      class="icon"
-      :src="require('@/assets/vectors/' + icon + '.svg')"
-      :alt="icon_alt"
+      class="illustration"
+      :src="require('@/assets/vectors/illustrations/' + illustration + '.svg')"
+      :alt="illustration_alt"
     />
     <div class="texts">
-      <span>{{ category }}</span>
+      <span>{{ label }}</span>
       <h1 v-html="title"></h1>
     </div>
   </router-link>
@@ -20,7 +20,15 @@
 <script>
 export default {
   name: 'card',
-  props: ['link', 'logo', 'logo_alt', 'icon', 'icon_alt', 'category', 'title'],
+  props: [
+    'link',
+    'brand',
+    'brand_alt',
+    'illustration',
+    'illustration_alt',
+    'label',
+    'title',
+  ],
 };
 </script>
 
@@ -43,11 +51,11 @@ a {
     background: rgba(20, 35, 50, 0.8);
   }
 
-  .logo {
+  .brand {
     height: 16px;
   }
 
-  .icon {
+  .illustration {
     margin: 0 auto;
     width: 96px;
   }
@@ -55,6 +63,7 @@ a {
   .texts {
     display: flex;
     flex-direction: column;
+    gap: 4px;
 
     span {
       @include pico;
@@ -74,11 +83,11 @@ a {
     border-radius: 16px;
     border-bottom: 2px solid $sky;
 
-    .logo {
+    .brand {
       height: 32px;
     }
 
-    .icon {
+    .illustration {
       width: 160px;
     }
 

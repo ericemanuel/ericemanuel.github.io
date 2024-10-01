@@ -21,7 +21,7 @@ export default {
 
 html {
   background-color: $navy;
-  background-image: url(@/assets/vectors/rapport.svg);
+  background-image: url(@/assets/vectors/illustrations/rapport.svg);
   background-size: 240px;
 }
 

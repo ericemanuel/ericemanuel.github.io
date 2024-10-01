@@ -1,6 +1,9 @@
 <template>
   <div class="container">
-    <img :src="require('@/assets/vectors/' + icon + '.svg')" :alt="alt" />
+    <img
+      :src="require('@/assets/vectors/illustrations/' + illustration + '.svg')"
+      :alt="alt"
+    />
     <div class="texts">
       <h1 v-html="title"></h1>
       <hr />
@@ -12,7 +15,7 @@
 <script>
 export default {
   name: 'slide',
-  props: ['title', 'description', 'icon', 'alt'],
+  props: ['title', 'description', 'illustration', 'alt'],
 };
 </script>
 
