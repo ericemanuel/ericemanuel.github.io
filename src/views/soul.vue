@@ -16,7 +16,7 @@
     ]"
     location="Rio de Janeiro"
     date="2014"
-    logo="puc-rio"
+    brand="puc-rio"
     alt="Puc-Rio"
     :skills="['Desenvolvimento', 'UX Design', 'Eletrônica']"
   />

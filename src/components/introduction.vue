@@ -45,7 +45,7 @@ export default {
     'paragraphs',
     'location',
     'date',
-    'logo',
+    'brand',
     'alt',
     'skills',
   ],

@@ -29,12 +29,9 @@
         <div class="outline"></div>
       </div>
       <div class="texts">
-        <h1>Boas ideias vêm do encontro de vários conhecimentos</h1>
+        <h1 v-html="$t('about.heading')"></h1>
         <hr />
-        <p>
-          Eu estudo Design, Desenvolvimento, Marketing,<br />
-          Liderança, Música <em>e faço um miojo maravilhoso!</em>
-        </p>
+        <p v-html="$t('about.paragraph')"></p>
         <div class="links">
           <icon link="#" icon="whatsapp" alt="Whatsapp" />
           <icon link="#" icon="instagram" alt="Instagram" />
@@ -74,95 +71,13 @@ import 'swiper/css';
 export default {
   name: 'home',
   components: { animation, Swiper, SwiperSlide, slide, icon, card },
-  data() {
-    return {
-      slides: [
-        {
-          title: 'Designer e<br> desenvolvedor',
-          description:
-            'As soluções <em>bonitas e funcionais</em> que você<br> precisa, juntas em um único profissional.',
-          illustration: 'gears',
-          alt: 'Engrenagens',
-        },
-        {
-          title: 'Publicidade<br> com impacto',
-          description:
-            'Comunicações que <em>valorizam o seu negócio</em><br> e fazem seus resultados decolarem!',
-          illustration: 'rocket',
-          alt: 'Foguete',
-        },
-        {
-          title: 'Criatividade<br> em tudo',
-          description:
-            'Para cada trabalho <em>uma inspiração única,</em><br> para cada marca uma nova perspectiva.',
-          illustration: 'head',
-          alt: 'Criatividade',
-        },
-        {
-          title: 'Paixão pelo<br> o que faço',
-          description:
-            'Para gerar <em>resultados incríveis</em><br> é preciso amar o que se faz!',
-          illustration: 'fire',
-          alt: 'Fogo',
-        },
-      ],
-      cards: [
-        {
-          link: '/portfolio/clientportal',
-          brand: 'clearsale',
-          brand_alt: 'ClearSale',
-          illustration: 'globe',
-          illustration_alt: 'Globo',
-          label: 'Design',
-          title: 'Uma interface para todos',
-        },
-        {
-          link: '/portfolio/soul',
-          brand: 'puc-rio',
-          brand_alt: 'Puc-Rio',
-          illustration: 'mind',
-          illustration_alt: 'Mente',
-          label: 'Desenvolvimento',
-          title: 'Um app que lê pensamentos',
-        },
-        {
-          link: '/portfolio/sitedosesc',
-          brand: 'sesc',
-          brand_alt: 'Sesc',
-          illustration: 'link',
-          illustration_alt: 'Link',
-          label: 'Design',
-          title: 'Conectando culturas',
-        },
-        {
-          link: '/portfolio/sesc+',
-          brand: 'sesc',
-          brand_alt: 'Sesc',
-          illustration: 'head',
-          illustration_alt: 'Head',
-          label: 'UX Design',
-          title: 'A experiência<br> de explorar',
-        },
-        {
-          link: '/portfolio/montehermom',
-          brand: 'montehermom',
-          brand_alt: 'Monte Hermom',
-          illustration: 'cross',
-          illustration_alt: 'Cruz',
-          label: 'Um pouco de tudo',
-          title: 'Tecnologia para dar vida',
-        },
-        {
-          link: '/portfolio/gamechanger',
-          brand: 'uerj',
-          brand_alt: 'Uerj',
-          illustration: 'block',
-          illustration_alt: 'Bloco',
-          label: 'Desenvolvimento',
-          title: 'O jogo da inovação',
-        },
-      ],
-    };
+  computed: {
+    slides() {
+      return this.$i18n.messages[this.$i18n.locale].slides;
+    },
+    cards() {
+      return this.$i18n.messages[this.$i18n.locale].cards;
+    },
   },
   setup() {
     const onSwiper = () => {
@@ -311,6 +226,7 @@ export default {
 
         p {
           @include base;
+          width: 512px;
         }
 
         .links {

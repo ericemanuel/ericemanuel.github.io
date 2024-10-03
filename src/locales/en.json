@@ -1,0 +1,88 @@
+{
+  "slides": [
+    {
+      "title": "Designer and<br> developer",
+      "description": "The <em>beautiful and functional</em> solutions<br> you need, all in one professional.",
+      "illustration": "gears",
+      "alt": "Gears"
+    },
+    {
+      "title": "Advertising<br> with impact",
+      "description": "Communications that <em>value your business</em><br> and make your results take off!",
+      "illustration": "rocket",
+      "alt": "Rocket"
+    },
+    {
+      "title": "Creativity<br> in everything",
+      "description": "For each job <em>a unique inspiration</em>,<br> for each brand a new perspective.",
+      "illustration": "head",
+      "alt": "Creativity"
+    },
+    {
+      "title": "Passion for<br> what I do",
+      "description": "To generate <em>amazing results</em><br> you must love what you do!",
+      "illustration": "fire",
+      "alt": "Fire"
+    }
+  ],
+  "about": {
+    "heading": "Good ideas come from combining knowledge",
+    "paragraph": "I study Design, Development, Marketing, Leadership, Music <em>and I make amazing ramen!</em>"
+  },
+  "cards": [
+    {
+      "link": "/portfolio/clientportal",
+      "brand": "clearsale",
+      "brand_alt": "ClearSale",
+      "illustration": "globe",
+      "illustration_alt": "Globe",
+      "label": "Design",
+      "title": "An interface for everyone"
+    },
+    {
+      "link": "/portfolio/soul",
+      "brand": "puc-rio",
+      "brand_alt": "Puc-Rio",
+      "illustration": "mind",
+      "illustration_alt": "Mind",
+      "label": "Development",
+      "title": "An app that reads minds"
+    },
+    {
+      "link": "/portfolio/sitedosesc",
+      "brand": "sesc",
+      "brand_alt": "Sesc",
+      "illustration": "link",
+      "illustration_alt": "Link",
+      "label": "Design",
+      "title": "Connecting cultures"
+    },
+    {
+      "link": "/portfolio/gamechanger",
+      "brand": "uerj",
+      "brand_alt": "Uerj",
+      "illustration": "block",
+      "illustration_alt": "Block",
+      "label": "Development",
+      "title": "The game of innovation"
+    },
+    {
+      "link": "/portfolio/montehermom",
+      "brand": "montehermom",
+      "brand_alt": "Monte Hermom",
+      "illustration": "cross",
+      "illustration_alt": "Cross",
+      "label": "A bit of everything",
+      "title": "Technology<br> to give life"
+    },
+    {
+      "link": "/portfolio/sesc+",
+      "brand": "sesc",
+      "brand_alt": "Sesc",
+      "illustration": "map",
+      "illustration_alt": "Map",
+      "label": "UX Design",
+      "title": "The experience<br> of exploring"
+    }
+  ]
+}
