@@ -52,7 +52,7 @@ hr {
 
 @media only screen and (min-width: 900px) {
   html {
-    background-size: 320px;
+    background-size: 360px;
   }
 
   #app {
