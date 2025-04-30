@@ -10,10 +10,7 @@
       :src="require('@/assets/vectors/illustrations/' + illustration + '.svg')"
       :alt="illustration_alt"
     />
-    <div class="texts">
-      <span>{{ label }}</span>
-      <h1 v-html="title"></h1>
-    </div>
+    <h1 v-html="title"></h1>
   </router-link>
 </template>
 
@@ -52,7 +49,7 @@ a {
   }
 
   .brand {
-    height: 16px;
+    height: 24px;
   }
 
   .illustration {
@@ -60,18 +57,8 @@ a {
     width: 96px;
   }
 
-  .texts {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-
-    span {
-      @include pico;
-    }
-
-    h1 {
-      @include mili;
-    }
+  h1 {
+    @include mili;
   }
 }
 
@@ -91,16 +78,8 @@ a {
       width: 160px;
     }
 
-    .texts {
-      gap: 4px;
-
-      span {
-        @include nano;
-      }
-
-      h1 {
-        @include mega;
-      }
+    h1 {
+      @include mega;
     }
   }
 }

@@ -13,10 +13,10 @@
     >
       <swiper-slide v-for="slide in slides">
         <slide
-          :title="slide.title"
-          :description="slide.description"
           :illustration="slide.illustration"
           :alt="slide.alt"
+          :title="slide.title"
+          :description="slide.description"
         />
       </swiper-slide>
     </swiper>
@@ -29,9 +29,9 @@
         <div class="outline"></div>
       </div>
       <div class="texts">
-        <h1 v-html="$t('about.heading')"></h1>
+        <h1 v-html="$t('about.title')"></h1>
         <hr />
-        <p v-html="$t('about.paragraph')"></p>
+        <p v-html="$t('about.description')"></p>
         <div class="links">
           <icon link="#" icon="whatsapp" alt="Whatsapp" />
           <icon link="#" icon="instagram" alt="Instagram" />
@@ -145,7 +145,7 @@ export default {
 
       h1 {
         @include kilo;
-        max-width: 224px;
+        max-width: 230px;
         text-align: right;
       }
 

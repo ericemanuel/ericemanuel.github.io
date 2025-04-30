@@ -15,7 +15,7 @@
 <script>
 export default {
   name: 'slide',
-  props: ['title', 'description', 'illustration', 'alt'],
+  props: ['illustration', 'alt', 'title', 'description'],
 };
 </script>
 
@@ -37,6 +37,7 @@ export default {
     justify-content: flex-start;
     gap: 24px;
     margin-top: -16px;
+    width: 300px;
 
     h1 {
       @include tera;
@@ -62,6 +63,7 @@ export default {
     .texts {
       gap: 32px;
       margin-top: 0;
+      width: 420px;
 
       h1 {
         @include peta;
