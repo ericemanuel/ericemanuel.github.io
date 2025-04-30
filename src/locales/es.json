@@ -2,33 +2,33 @@
   "slides": [
     {
       "illustration": "gears",
-      "alt": "Engrenagens",
-      "title": "Designer e desenvolvedor",
-      "description": "As soluções <em>bonitas e funcionais</em> que você precisa, juntas em um único profissional."
+      "alt": "Engrenajes",
+      "title": "Diseñador y desarrollador",
+      "description": "Las soluciones <em>bonitas y funcionales</em> que necesitas, juntas en un solo profesional."
     },
     {
       "illustration": "rocket",
-      "alt": "Foguete",
-      "title": "Publicidade com impacto",
-      "description": "Comunicações que <em>valorizam o seu negócio</em> e fazem seus resultados decolarem!"
+      "alt": "Cohete",
+      "title": "Publicidad con impacto",
+      "description": "Comunicaciones que <em>valoran tu negocio</em> y hacen que tus resultados se disparen!"
     },
     {
       "illustration": "head",
-      "alt": "Criatividade",
-      "title": "Criatividade em tudo",
-      "description": "Para cada trabalho <em>uma inspiração única</em>, para cada marca uma nova perspectiva."
+      "alt": "Creatividad",
+      "title": "Creatividad en todo",
+      "description": "Para cada obra <em>una inspiración única</em>, para cada marca una nueva perspectiva."
     },
     {
       "illustration": "fire",
-      "alt": "Fogo",
-      "title": "Paixão pelo o que faço",
-      "description": "Para gerar <em>resultados incríveis</em> é preciso amar o que se faz!"
+      "alt": "Fuego",
+      "title": "Pasión por lo que hago",
+      "description": "Para generar <em>resultados increíbles</em> tienes que amar lo que haces!"
     }
   ],
 
   "about": {
-    "title": "Boas ideias vêm do encontro de vários conhecimentos",
-    "description": "Eu estudo Design, Desenvolvimento, Marketing, Estratégia, Música <em>— e faço um miojo incrível!</em>"
+    "title": "Las buenas ideas surgen de la combinación de diferentes conocimientos.",
+    "description": "Estudio Diseño, Desarrollo, Marketing, Estrategia, Música <em>— y hago un ramen increíble!</em>"
   },
 
   "cards": [
@@ -38,7 +38,7 @@
       "brand_alt": "ClearSale",
       "illustration": "globe",
       "illustration_alt": "Globo",
-      "title": "Uma interface para todos"
+      "title": "Una interfaz para todos"
     },
     {
       "link": "/portfolio/soul",
@@ -46,7 +46,7 @@
       "brand_alt": "Puc-Rio",
       "illustration": "mind",
       "illustration_alt": "Mente",
-      "title": "Um app que lê pensamentos"
+      "title": "Una app que lee pensamientos"
     },
     {
       "link": "/portfolio/sitedosesc",
@@ -61,8 +61,8 @@
       "brand": "uerj",
       "brand_alt": "Uerj",
       "illustration": "block",
-      "illustration_alt": "Bloco",
-      "title": "O jogo da inovação"
+      "illustration_alt": "Bloque",
+      "title": "El juego de la innovación"
     },
     {
       "link": "/portfolio/montehermom",
@@ -70,7 +70,7 @@
       "brand_alt": "Monte Hermom",
       "illustration": "cross",
       "illustration_alt": "Cruz",
-      "title": "Tecnologia para dar vida"
+      "title": "Tecnología para dar vida"
     },
     {
       "link": "/portfolio/sesc+",
@@ -78,7 +78,7 @@
       "brand_alt": "Sesc",
       "illustration": "map",
       "illustration_alt": "Mapa",
-      "title": "A experiência de explorar"
+      "title": "La experiencia de explorar"
     }
   ]
 }

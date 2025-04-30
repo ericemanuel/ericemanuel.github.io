@@ -1,34 +1,36 @@
 {
   "slides": [
     {
-      "title": "Designer and<br> developer",
-      "description": "The <em>beautiful and functional</em> solutions<br> you need, all in one professional.",
       "illustration": "gears",
-      "alt": "Gears"
+      "alt": "Gears",
+      "title": "Designer and developer",
+      "description": "The <em>beautiful and functional</em> solutions you need, all in one professional."
     },
     {
-      "title": "Advertising<br> with impact",
-      "description": "Communications that <em>value your business</em><br> and make your results take off!",
       "illustration": "rocket",
-      "alt": "Rocket"
+      "alt": "Rocket",
+      "title": "Advertising with impact",
+      "description": "Communications that <em>value your business</em> and make your results take off!"
     },
     {
-      "title": "Creativity<br> in everything",
-      "description": "For each job <em>a unique inspiration</em>,<br> for each brand a new perspective.",
       "illustration": "head",
-      "alt": "Creativity"
+      "alt": "Creativity",
+      "title": "Creativity in everything",
+      "description": "For each job <em>a unique inspiration</em>, for each brand a new perspective."
     },
     {
-      "title": "Passion for<br> what I do",
-      "description": "To generate <em>amazing results</em><br> you must love what you do!",
       "illustration": "fire",
-      "alt": "Fire"
+      "alt": "Fire",
+      "title": "Passion for what I do",
+      "description": "To generate <em>amazing results</em> you must love what you do!"
     }
   ],
+
   "about": {
-    "heading": "Good ideas come from combining knowledge",
-    "paragraph": "I study Design, Development, Marketing, Leadership, Music <em>and I make amazing ramen!</em>"
+    "title": "Good ideas come from mixing diverse knowledge",
+    "description": "I study Design, Development, Marketing, Strategy, Music <em>— and I make amazing ramen!</em>"
   },
+
   "cards": [
     {
       "link": "/portfolio/clientportal",
@@ -36,8 +38,7 @@
       "brand_alt": "ClearSale",
       "illustration": "globe",
       "illustration_alt": "Globe",
-      "label": "Design",
-      "title": "An interface for everyone"
+      "title": "One interface for everyone"
     },
     {
       "link": "/portfolio/soul",
@@ -45,8 +46,7 @@
       "brand_alt": "Puc-Rio",
       "illustration": "mind",
       "illustration_alt": "Mind",
-      "label": "Development",
-      "title": "An app that reads minds"
+      "title": "An app that reads thoughts"
     },
     {
       "link": "/portfolio/sitedosesc",
@@ -54,7 +54,6 @@
       "brand_alt": "Sesc",
       "illustration": "link",
       "illustration_alt": "Link",
-      "label": "Design",
       "title": "Connecting cultures"
     },
     {
@@ -63,8 +62,7 @@
       "brand_alt": "Uerj",
       "illustration": "block",
       "illustration_alt": "Block",
-      "label": "Development",
-      "title": "The game of innovation"
+      "title": "The innovation game"
     },
     {
       "link": "/portfolio/montehermom",
@@ -72,8 +70,7 @@
       "brand_alt": "Monte Hermom",
       "illustration": "cross",
       "illustration_alt": "Cross",
-      "label": "A bit of everything",
-      "title": "Technology<br> to give life"
+      "title": "Technology to bring life"
     },
     {
       "link": "/portfolio/sesc+",
@@ -81,8 +78,7 @@
       "brand_alt": "Sesc",
       "illustration": "map",
       "illustration_alt": "Map",
-      "label": "UX Design",
-      "title": "The experience<br> of exploring"
+      "title": "The experience of exploring"
     }
   ]
 }
