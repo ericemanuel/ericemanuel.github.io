@@ -8,9 +8,9 @@ const routes = [
     component: home,
   },
   {
-    path: '/portfolio/montehermom',
-    name: 'montehermom',
-    component: () => import('../views/montehermom.vue'),
+    path: '/portfolio/one',
+    name: 'one',
+    component: () => import('../views/one.vue'),
   },
   {
     path: '/portfolio/soul',
@@ -18,9 +18,24 @@ const routes = [
     component: () => import('../views/soul.vue'),
   },
   {
-    path: '/portfolio/designsystem',
-    name: 'designsystem',
-    component: () => import('../views/designsystem.vue'),
+    path: '/portfolio/sitedosesc',
+    name: 'sitedosesc',
+    component: () => import('../views/sitedosesc.vue'),
+  },
+  {
+    path: '/portfolio/gamechanger',
+    name: 'gamechanger',
+    component: () => import('../views/gamechanger.vue'),
+  },
+  {
+    path: '/portfolio/montehermom',
+    name: 'montehermom',
+    component: () => import('../views/montehermom.vue'),
+  },
+  {
+    path: '/portfolio/sesc+',
+    name: 'sesc+',
+    component: () => import('../views/sesc+.vue'),
   },
 ];
 

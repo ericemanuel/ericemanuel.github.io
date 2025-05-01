@@ -1,12 +1,16 @@
 <template>
-  <cover id="cover" title="Soul" description="Interfaces com o pensamento">
-  </cover>
-
   <introduction
     id="intro"
-    title="Soul"
-    description="Tomada de decisões baseadas no desejo inconsciente do usuário"
-    logo="puc-rio"
+    stage="Desafio"
+    title="Interfaces controladas pelo pensamento"
+    :paragraphs="[
+      'Multiple customer touchpoints provides a wide opportunity for improving the ordering experience.',
+      'After a series of innovation workshops, the team has decided on perfecting the pickup and delivery process by integrating a mobile app for their consumers.',
+      'With the David & Sebs at the helm of it all, the whole team quickly got into the drawing board – drafting, sharing and skeching their ideas.',
+    ]"
+    location="Rio de Janeiro"
+    date="2014"
+    brand="puc-rio"
     alt="Puc-Rio"
     :skills="['Desenvolvimento', 'UX Design', 'Eletrônica']"
   />
@@ -26,8 +30,7 @@
 
   <quote
     class="quote"
-    quote="In just a few months – they already have branches expanding from Singapore to Bangkok. And now,
-          secretly brewing six more yellow shops near you."
+    quote="In just a few months – they already have branches expanding from Singapore to Bangkok. And now, secretly brewing six more yellow shops near you."
   />
 
   <stage
@@ -43,7 +46,7 @@
 
   <gallery
     class="gallery"
-    :images="['1', '2', '3', '1', '2', '3']"
+    :images="['1', '1', '1', '1', '1', '1']"
     :alts="['1', '2', '3', '1', '2', '3']"
   />
 
@@ -60,7 +63,7 @@
 
   <gallery
     class="gallery"
-    :images="['1', '2', '3', '1', '2', '3']"
+    :images="['1', '1', '1', '1', '1', '1']"
     :alts="['1', '2', '3', '1', '2', '3']"
   />
 
@@ -75,7 +78,6 @@
 
 <script>
 import introduction from '@/components/introduction.vue';
-import cover from '@/components/cover.vue';
 import stage from '@/components/stage.vue';
 import board from '@/components/board.vue';
 import quote from '../components/quote.vue';
@@ -84,7 +86,7 @@ import others from '@/components/others.vue';
 
 export default {
   name: 'soul',
-  components: { introduction, cover, stage, board, quote, gallery, others },
+  components: { cover, introduction, stage, board, quote, gallery, others },
 };
 </script>
 

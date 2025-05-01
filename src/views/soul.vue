@@ -1,10 +1,4 @@
 <template>
-  <cover
-    id="cover"
-    title="Soul"
-    description="Interfaces com o pensamento"
-  ></cover>
-
   <introduction
     id="intro"
     stage="Desafio"
@@ -83,7 +77,6 @@
 </template>
 
 <script>
-import cover from '@/components/cover.vue';
 import introduction from '@/components/introduction.vue';
 import stage from '@/components/stage.vue';
 import board from '@/components/board.vue';
