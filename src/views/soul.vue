@@ -1,20 +1,4 @@
 <template>
-  <introduction
-    id="intro"
-    stage="Desafio"
-    title="Interfaces controladas pelo pensamento"
-    :paragraphs="[
-      'Multiple customer touchpoints provides a wide opportunity for improving the ordering experience.',
-      'After a series of innovation workshops, the team has decided on perfecting the pickup and delivery process by integrating a mobile app for their consumers.',
-      'With the David & Sebs at the helm of it all, the whole team quickly got into the drawing board – drafting, sharing and skeching their ideas.',
-    ]"
-    location="Rio de Janeiro"
-    date="2014"
-    brand="puc-rio"
-    alt="Puc-Rio"
-    :skills="['Desenvolvimento', 'UX Design', 'Eletrônica']"
-  />
-
   <stage
     class="stage"
     stage="Desafio"
@@ -77,7 +61,6 @@
 </template>
 
 <script>
-import introduction from '@/components/introduction.vue';
 import stage from '@/components/stage.vue';
 import board from '@/components/board.vue';
 import quote from '../components/quote.vue';
@@ -86,7 +69,7 @@ import others from '@/components/others.vue';
 
 export default {
   name: 'soul',
-  components: { cover, introduction, stage, board, quote, gallery, others },
+  components: { stage, board, quote, gallery, others },
 };
 </script>
 

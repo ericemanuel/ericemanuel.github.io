@@ -16,7 +16,7 @@
       "illustration": "head",
       "alt": "Creativity",
       "title": "Creativity in everything",
-      "description": "For each job <em>a unique inspiration</em>, for each brand a new perspective."
+      "description": "For each job <em>a unique inspiration</em>,<br> for each brand a new perspective."
     },
     {
       "illustration": "fire",
@@ -31,9 +31,9 @@
     "description": "I study Design, Development, Marketing, Strategy, Music <em>— and I make amazing ramen!</em>"
   },
 
-  "cards": [
+  "projects": [
     {
-      "link": "/portfolio/clientportal",
+      "link": "/portfolio/one",
       "brand": "clearsale",
       "brand_alt": "ClearSale",
       "illustration": "globe",
@@ -79,6 +79,86 @@
       "illustration": "map",
       "illustration_alt": "Map",
       "title": "The experience of exploring"
+    }
+  ],
+
+  "labels": [
+    "Partner",
+    "Location",
+    "Year",
+    "Skills",
+    "The challenge",
+    "The technology",
+    "The result",
+    "Previous",
+    "Next"
+  ],
+
+  "one": {
+    "hero": {
+      "illustration": "globe",
+      "alt": "Globe",
+      "title": "One",
+      "description": "One interface for everyone."
+    },
+
+    "items": [
+      "ClearSale",
+      "São Paulo",
+      "2024",
+      ["Design", "Research", "Strategy", "Leadership"]
+    ],
+
+    "stages": [
+      {
+        "title": "Global and scalable design",
+        "paragraph": "Developing global anti-fraud intelligence goes far beyond simple data processing. You need to create an experience that adapts to different languages, currencies, time zones, and devices. To integrate the applications developed by ClearSale, it became essential to create a robust design system, capable of guaranteeing scalability, consistency and efficiency."
+      },
+      {
+        "title": "A multidisciplinary initiative",
+        "paragraph": "One was developed based on Material Design 3 and had all its prototyping carried out in Figma, promoting collaboration between teams and continuous validation of flows. Its components were implemented as Web Components, allowing integration with different frameworks and keeping ClearSale's design system efficient and scalable."
+      },
+      {
+        "title": "Local advances, global impacts",
+        "paragraph": "At the end of its first year, One replaced the Brazilian and international portals, consolidating itself as ClearSale's main product. Since then, it has evolved to integrate all of the company's products, unifying technology, interface and, above all, the user experience."
+      }
+    ],
+
+    "highlight": "Global by serving users in all countries, but also by meeting the company's internal needs"
+  },
+
+  "soul": [
+    {
+      "hero": {
+        "illustration": "globe",
+        "alt": "Globe",
+        "title": "One",
+        "description": "One interface for everyone."
+      },
+
+      "items": [
+        "Soul",
+        "Unconscious interfaces",
+        "2024",
+        ["Design", "Research", "Strategy", "Leadership"]
+      ],
+
+      "stages": [
+        {
+          "title": "Global and scalable design",
+          "paragraph": "Developing global anti-fraud intelligence goes far beyond simple data processing. You need to create an experience that adapts to different languages, currencies, time zones, and devices. To integrate the applications developed by ClearSale, it became essential to create a robust design system, capable of guaranteeing scalability, consistency and efficiency."
+        },
+        {
+          "title": "A multidisciplinary initiative",
+          "paragraph": "One was developed based on Material Design 3 and had all its prototyping carried out in Figma, promoting collaboration between teams and continuous validation of flows. Its components were implemented as Web Components, allowing integration with different frameworks and keeping ClearSale's design system efficient and scalable."
+        },
+        {
+          "title": "Local advances, global impacts",
+          "paragraph": "At the end of its first year, One replaced the Brazilian and international portals, consolidating itself as ClearSale's main product. Since then, it has evolved to integrate all of the company's products, unifying technology, interface and, above all, the user experience."
+        }
+      ],
+
+      "highlight": "Global by serving users in all countries, but also by meeting the company's internal needs"
     }
   ]
 }

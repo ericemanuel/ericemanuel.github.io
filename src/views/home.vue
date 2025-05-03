@@ -45,14 +45,14 @@
     <div class="container">
       <animation></animation>
       <card
-        v-for="card in cards"
-        :link="card.link"
-        :brand="card.brand"
-        :brand_alt="card.brand_alt"
-        :illustration="card.illustration"
-        :illustration_alt="card.illustration_alt"
-        :label="card.label"
-        :title="card.title"
+        v-for="project in projects"
+        :link="project.link"
+        :brand="project.brand"
+        :brand_alt="project.brand_alt"
+        :illustration="project.illustration"
+        :illustration_alt="project.illustration_alt"
+        :label="project.label"
+        :title="project.title"
       />
     </div>
   </section>
@@ -75,8 +75,8 @@ export default {
     slides() {
       return this.$i18n.messages[this.$i18n.locale].slides;
     },
-    cards() {
-      return this.$i18n.messages[this.$i18n.locale].cards;
+    projects() {
+      return this.$i18n.messages[this.$i18n.locale].projects;
     },
   },
   setup() {
@@ -149,7 +149,8 @@ export default {
         text-align: right;
       }
 
-      p {
+      p,
+      :deep(p) {
         @include micro;
         text-align: right;
       }
@@ -224,7 +225,8 @@ export default {
           max-width: 556px;
         }
 
-        p {
+        p,
+        :deep(p) {
           @include base;
           width: 512px;
         }

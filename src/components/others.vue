@@ -6,20 +6,12 @@
           <span><em>Anterior</em></span>
           <h1>{{ titles[0] }}</h1>
         </div>
-        <img
-          :src="require('@/assets/images/' + images[0] + '.png')"
-          :alt="alts[0]"
-        />
       </router-link>
       <router-link :to="links[1]">
         <div>
           <span><em>Próximo</em></span>
           <h1>{{ titles[1] }}</h1>
         </div>
-        <img
-          :src="require('@/assets/images/' + images[1] + '.png')"
-          :alt="alts[1]"
-        />
       </router-link>
     </div>
   </section>
@@ -28,7 +20,7 @@
 <script>
 export default {
   name: 'others',
-  props: ['links', 'titles', 'images', 'alts'],
+  props: ['links', 'titles'],
 };
 </script>
 
@@ -64,14 +56,6 @@ section {
           font-size: 36px;
           font-weight: 600;
         }
-      }
-
-      img {
-        position: absolute;
-        right: 0;
-        width: 200px;
-        height: 120px;
-        opacity: 0.3;
       }
     }
   }

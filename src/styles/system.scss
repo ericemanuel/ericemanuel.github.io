@@ -76,12 +76,25 @@ $white: #fff;
 
 /* assignments
 --------------------------------------------- */
+@mixin emphasis {
+  font-style: italic;
+  background: -webkit-linear-gradient(0deg, #3298cb, #38bfc3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @mixin peta {
   font-family: 'eina';
   font-weight: $semibold;
   font-size: 64px;
   line-height: 76px;
   color: $white;
+
+  & em {
+    font-weight: $bold;
+    @include emphasis;
+  }
 }
 
 @mixin tera {
@@ -90,6 +103,11 @@ $white: #fff;
   font-size: 40px;
   line-height: 48px;
   color: $white;
+
+  & em {
+    font-weight: $bold;
+    @include emphasis;
+  }
 }
 
 @mixin giga {
@@ -98,6 +116,11 @@ $white: #fff;
   font-size: 36px;
   line-height: 44px;
   color: $white;
+
+  & em {
+    font-weight: $semibold;
+    @include emphasis;
+  }
 }
 
 @mixin mega {
@@ -106,6 +129,11 @@ $white: #fff;
   font-size: 28px;
   line-height: 32px;
   color: $white;
+
+  & em {
+    font-weight: $semibold;
+    @include emphasis;
+  }
 }
 
 @mixin kilo {
@@ -114,22 +142,23 @@ $white: #fff;
   font-size: 24px;
   line-height: 28px;
   color: $white;
+
+  & em {
+    font-weight: $semibold;
+    @include emphasis;
+  }
 }
 
-@mixin base($variant: regular) {
+@mixin base {
   font-family: 'eina';
   font-weight: $regular;
   font-size: 20px;
   line-height: 24px;
   color: $white;
 
-  @if $variant == emphasis {
-    font-weight: $bold;
-    font-style: italic;
-    background: -webkit-linear-gradient(0deg, #3298cb, #38bfc3);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  & em {
+    font-weight: $semibold;
+    @include emphasis;
   }
 }
 
@@ -139,39 +168,36 @@ $white: #fff;
   font-size: 16px;
   line-height: 20px;
   color: $white;
+
+  & em {
+    font-weight: $semibold;
+    @include emphasis;
+  }
 }
 
-@mixin micro($variant: regular) {
+@mixin micro {
   font-family: 'eina';
   font-weight: $regular;
   font-size: 14px;
   line-height: 16px;
   color: $white;
 
-  @if $variant == emphasis {
-    font-weight: $bold;
-    font-style: italic;
-    background: -webkit-linear-gradient(0deg, #3298cb, #38bfc3);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  & em {
+    font-weight: $semibold;
+    @include emphasis;
   }
 }
 
 @mixin nano {
   font-family: 'eina';
-  font-weight: 300;
-  font-style: italic;
-  font-size: 14px;
-  line-height: 16px;
-  color: $white;
-}
-
-@mixin pico {
-  font-family: 'eina';
-  font-weight: 300;
+  font-weight: $light;
   font-style: italic;
   font-size: 10px;
   line-height: 12px;
   color: $white;
+
+  & em {
+    font-weight: $semibold;
+    @include emphasis;
+  }
 }

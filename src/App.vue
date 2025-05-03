@@ -40,10 +40,6 @@ html {
   max-width: 328px;
 }
 
-em {
-  @include micro(emphasis);
-}
-
 hr {
   width: 40px;
   box-sizing: border-box;
@@ -62,10 +58,6 @@ hr {
 
   .container {
     max-width: 900px;
-  }
-
-  em {
-    @include base(emphasis);
   }
 
   hr {
