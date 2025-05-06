@@ -1,7 +1,7 @@
 <template>
   <div class="animation">
     <video autoplay loop muted playsinline poster="@/assets/videos/green.png">
-      <source src="@/assets/videos/green.mp4" type="video/mp4" />
+      <source src="@/assets/videos/green.webm" type="video/webm" />
     </video>
   </div>
 </template>

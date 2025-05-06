@@ -63,7 +63,7 @@
 <script>
 import stage from '@/components/stage.vue';
 import board from '@/components/board.vue';
-import quote from '../components/quote.vue';
+import quote from '../components/highlight.vue';
 import gallery from '../components/gallery.vue';
 import others from '@/components/others.vue';
 

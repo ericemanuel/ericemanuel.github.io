@@ -3,14 +3,11 @@
     <div class="container">
       <div>
         <span>
-          <em>{{ stage }}</em>
+          <em v-html="label"></em>
         </span>
-        <h1>{{ title }}</h1>
-        <hr />
+        <h2 v-html="title"></h2>
       </div>
-      <div>
-        <p v-for="paragraph in paragraphs">{{ paragraph }}</p>
-      </div>
+      <p v-html="paragraph"></p>
     </div>
   </article>
 </template>
@@ -18,7 +15,7 @@
 <script>
 export default {
   name: 'stage',
-  props: ['stage', 'title', 'paragraphs'],
+  props: ['label', 'title', 'paragraph'],
 };
 </script>
 
@@ -26,42 +23,42 @@ export default {
 .container {
   flex-direction: column;
   align-items: flex-start;
-}
+  gap: 24px;
 
-span {
-  margin-bottom: 5px;
-}
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
 
-h1 {
-  font-weight: 600;
-  font-size: 28px;
-}
+  h2 {
+    @include kilo;
+  }
 
-span,
-p {
-  font-size: 14px;
-}
-
-p:not(:last-child) {
-  margin-bottom: 30px;
+  span,
+  p {
+    @include micro;
+  }
 }
 
 @media only screen and (min-width: 900px) {
   .container {
     flex-direction: row;
+    gap: 64px;
 
-    div:first-of-type {
-      margin-right: 100px;
+    span {
+      @include base;
     }
-  }
 
-  h1 {
-    font-size: 36px;
-  }
+    h2 {
+      @include mega;
+    }
 
-  span,
-  p {
-    font-size: 18px;
+    p {
+      margin-top: 32px;
+      width: 512px;
+      @include mili;
+    }
   }
 }
 </style>

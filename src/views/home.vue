@@ -25,7 +25,7 @@
   <section id="about">
     <div class="container">
       <div class="picture">
-        <img src="@/assets/images/eric.jpg" alt="Eric Emanuel" />
+        <img src="@/assets/images/eric.webp" alt="Eric Emanuel" />
         <div class="outline"></div>
       </div>
       <div class="texts">
@@ -41,7 +41,7 @@
     </div>
   </section>
 
-  <section id="portfolio">
+  <section id="projects">
     <div class="container">
       <animation></animation>
       <card
@@ -71,14 +71,13 @@ import 'swiper/css';
 export default {
   name: 'home',
   components: { animation, Swiper, SwiperSlide, slide, icon, card },
+
+  // prettier-ignore
   computed: {
-    slides() {
-      return this.$i18n.messages[this.$i18n.locale].slides;
-    },
-    projects() {
-      return this.$i18n.messages[this.$i18n.locale].projects;
-    },
+    slides()   { return this.$i18n.messages[this.$i18n.locale].slides; },
+    projects() { return this.$i18n.messages[this.$i18n.locale].projects; },
   },
+
   setup() {
     const onSwiper = () => {
       const pagination = document.querySelector('.swiper-pagination');
@@ -163,7 +162,7 @@ export default {
   }
 }
 
-#portfolio {
+#projects {
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -178,11 +177,11 @@ export default {
     }
 
     :deep(a:nth-of-type(2n-1)) {
-      transform: translateY(-32px);
+      transform: translateY(-24px);
     }
 
     :deep(a:nth-of-type(2n)) {
-      transform: translateY(32px);
+      transform: translateY(24px);
     }
   }
 }
@@ -238,7 +237,7 @@ export default {
     }
   }
 
-  #portfolio {
+  #projects {
     .container {
       :deep(.animation) {
         width: 1200px;
@@ -250,7 +249,7 @@ export default {
       }
 
       :deep(a:nth-of-type(3n)) {
-        transform: translateY(-64px);
+        transform: translateY(-56px);
       }
 
       :deep(a:nth-of-type(3n-1)) {
@@ -258,7 +257,7 @@ export default {
       }
 
       :deep(a:nth-of-type(3n-2)) {
-        transform: translateY(64px);
+        transform: translateY(56px);
       }
     }
   }
