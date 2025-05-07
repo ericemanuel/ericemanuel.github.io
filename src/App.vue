@@ -35,6 +35,7 @@ html {
 
 .container {
   display: flex;
+  position: relative;
   align-items: center;
   margin: 0 auto;
   max-width: 328px;
@@ -44,6 +45,16 @@ hr {
   width: 40px;
   box-sizing: border-box;
   border-top: 2px solid $azure;
+}
+
+video {
+  width: 100%;
+}
+
+iframe {
+  border-radius: 12px;
+  width: 100%;
+  height: 197px;
 }
 
 @media only screen and (min-width: 900px) {
@@ -62,6 +73,11 @@ hr {
 
   hr {
     width: 64px;
+  }
+
+  iframe {
+    border-radius: 24px;
+    height: 540px;
   }
 }
 </style>

@@ -19,8 +19,8 @@ const routes = [
   },
   {
     path: '/portfolio/sitedosesc',
-    name: 'sitedosesc',
-    component: () => import('../views/sitedosesc.vue'),
+    name: 'sesc',
+    component: () => import('../views/sesc.vue'),
   },
   {
     path: '/portfolio/gamechanger',
@@ -35,7 +35,7 @@ const routes = [
   {
     path: '/portfolio/sesc+',
     name: 'sesc+',
-    component: () => import('../views/sesc+.vue'),
+    component: () => import('../views/sesc.vue'),
   },
 ];
 

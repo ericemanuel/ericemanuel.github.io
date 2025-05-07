@@ -2,15 +2,10 @@
   <article>
     <div class="container">
       <div>
-        <span>
-          <em>{{ stage }}</em>
-        </span>
-        <h1>{{ title }}</h1>
-        <hr />
+        <span><em v-html="label"></em></span>
+        <h2 v-html="title"></h2>
       </div>
-      <div>
-        <p v-for="paragraph in paragraphs">{{ paragraph }}</p>
-      </div>
+      <p v-html="paragraph"></p>
     </div>
   </article>
 </template>
@@ -18,50 +13,42 @@
 <script>
 export default {
   name: 'stage',
-  props: ['stage', 'title', 'paragraphs'],
+  props: ['label', 'title', 'paragraph'],
 };
 </script>
 
 <style scoped lang="scss">
+// prettier-ignore
 .container {
   flex-direction: column;
   align-items: flex-start;
-}
+  gap: 24px;
 
-span {
-  margin-bottom: 5px;
-}
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
 
-h1 {
-  font-weight: 600;
-  font-size: 28px;
-}
-
-span,
-p {
-  font-size: 14px;
-}
-
-p:not(:last-child) {
-  margin-bottom: 30px;
+  h2 { @include kilo; }
+  span,
+  p  { @include micro; }
 }
 
 @media only screen and (min-width: 900px) {
+  // prettier-ignore
   .container {
     flex-direction: row;
+    gap: 64px;
 
-    div:first-of-type {
-      margin-right: 100px;
+    p {
+      margin-top: 32px;
+      width: 512px;
     }
-  }
-
-  h1 {
-    font-size: 36px;
-  }
-
-  span,
-  p {
-    font-size: 18px;
+    
+    h2   { @include mega; }
+    span,
+    p    { @include base; }
   }
 }
 </style>

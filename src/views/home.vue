@@ -25,23 +25,40 @@
   <section id="about">
     <div class="container">
       <div class="picture">
-        <img src="@/assets/images/eric.jpg" alt="Eric Emanuel" />
+        <img src="@/assets/images/eric.webp" alt="Eric Emanuel" />
         <div class="outline"></div>
       </div>
       <div class="texts">
         <h1 v-html="$t('about.title')"></h1>
         <hr />
         <p v-html="$t('about.description')"></p>
+        <!-- prettier-ignore -->
         <div class="links">
-          <icon link="#" icon="whatsapp" alt="Whatsapp" />
-          <icon link="#" icon="instagram" alt="Instagram" />
-          <icon link="#" icon="linkedin" alt="LinkedIn" />
+          <icon
+            link="https://wa.me/542212204647"
+            icon="whatsapp" alt="Whatsapp"
+          />
+          <icon
+            link="https://linkedin.com/in/ericemanuel"
+            icon="linkedin" alt="LinkedIn"
+          />
+          <icon
+            link="https://figma.com/@ericemanuel"
+            icon="figma" alt="Figma"
+          />
+          <icon
+            link="https://instagram.com/eric.emanuel"
+            icon="instagram" alt="Instagram"
+          />
+          <icon link="https://github.com/ericemanuel"
+            icon="github" alt="Figma"
+          />
         </div>
       </div>
     </div>
   </section>
 
-  <section id="portfolio">
+  <section id="projects">
     <div class="container">
       <animation></animation>
       <card
@@ -70,25 +87,35 @@ import 'swiper/css';
 
 export default {
   name: 'home',
-  components: { animation, Swiper, SwiperSlide, slide, icon, card },
-  computed: {
-    slides() {
-      return this.$i18n.messages[this.$i18n.locale].slides;
-    },
-    projects() {
-      return this.$i18n.messages[this.$i18n.locale].projects;
-    },
+  components: {
+    animation,
+    Swiper,
+    SwiperSlide,
+    slide,
+    icon,
+    card,
   },
+
+  // prettier-ignore
+  computed: {
+    locale()   { return this.$i18n.messages[this.$i18n.locale]; },
+
+    slides()   { return this.locale.slides; },
+    projects() { return this.locale.projects; },
+  },
+
   setup() {
     const onSwiper = () => {
       const pagination = document.querySelector('.swiper-pagination');
       console.log(innerWidth);
+
       if (innerWidth < 1000) {
         pagination.style.right = (innerWidth - 328) / 2 + 'px';
       } else {
         pagination.style.right = (innerWidth - 900) / 2 + 'px';
       }
     };
+
     return {
       onSwiper,
       modules: [Autoplay, Pagination],
@@ -105,7 +132,9 @@ export default {
     :deep(.animation) {
       top: -200px;
       right: -200px;
+      left: auto;
       width: 540px;
+      transform: none;
     }
   }
 }
@@ -163,7 +192,8 @@ export default {
   }
 }
 
-#portfolio {
+#projects {
+  //prettier-ignore
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -171,19 +201,11 @@ export default {
     position: relative;
 
     :deep(.animation) {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       width: 800px;
     }
-
-    :deep(a:nth-of-type(2n-1)) {
-      transform: translateY(-32px);
-    }
-
-    :deep(a:nth-of-type(2n)) {
-      transform: translateY(32px);
-    }
+    
+    :deep(a:nth-of-type(2n-1)) { transform: translateY(-24px); }
+    :deep(a:nth-of-type(2n))   { transform: translateY(24px); }
   }
 }
 
@@ -238,28 +260,19 @@ export default {
     }
   }
 
-  #portfolio {
+  #projects {
+    //prettier-ignore
     .container {
       :deep(.animation) {
         width: 1200px;
       }
 
       :deep(a:nth-of-type(2n-1)),
-      :deep(a:nth-of-type(2n)) {
-        transform: none;
-      }
+      :deep(a:nth-of-type(2n))   { transform: none; }
 
-      :deep(a:nth-of-type(3n)) {
-        transform: translateY(-64px);
-      }
-
-      :deep(a:nth-of-type(3n-1)) {
-        transform: translateY(0px);
-      }
-
-      :deep(a:nth-of-type(3n-2)) {
-        transform: translateY(64px);
-      }
+      :deep(a:nth-of-type(3n))   { transform: translateY(-56px); }
+      :deep(a:nth-of-type(3n-1)) { transform: translateY(0px); }
+      :deep(a:nth-of-type(3n-2)) { transform: translateY(56px); }
     }
   }
 }

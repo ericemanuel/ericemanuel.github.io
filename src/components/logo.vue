@@ -1,9 +1,11 @@
 <template>
-  <router-link id="logo" to="/">
+  <footer>
     <div class="container">
-      <img src="@/assets/vectors/logos/ee.svg" alt="Eric Emanuel" />
+      <router-link to="/">
+        <img src="@/assets/vectors/logos/ee.svg" alt="EE" />
+      </router-link>
     </div>
-  </router-link>
+  </footer>
 </template>
 
 <script>
@@ -13,17 +15,23 @@ export default {
 </script>
 
 <style scoped lang="scss">
-img {
-  margin: 0 auto;
-  width: 40px;
-  background: -webkit-linear-gradient(0deg, #3298cb, #38bfc3);
-  background-clip: text;
-  -webkit-background-clip: text;
+.container {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 40px;
+    background: $flow;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
 }
 
 @media only screen and (min-width: 900px) {
-  img {
-    width: 56px;
+  .container {
+    img {
+      width: 56px;
+    }
   }
 }
 </style>

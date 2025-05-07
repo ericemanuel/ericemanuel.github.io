@@ -1,87 +1,66 @@
 <template>
-  <stage
-    class="stage"
-    stage="Desafio"
-    title="An MVP for the tech-enabled store"
-    :paragraphs="[
-      'Multiple customer touchpoints provides a wide opportunity for improving the ordering experience.',
-      'After a series of innovation workshops, the team has decided on perfecting the pickup and delivery process by integrating a mobile app for their consumers.',
-      'With the David & Sebs at the helm of it all, the whole team quickly got into the drawing board – drafting, sharing and skeching their ideas.',
-    ]"
+  <hero
+    :illustration="hero.illustration"
+    :alt="hero.alt"
+    :title="hero.title"
+    :description="hero.description"
   />
 
-  <board id="board" :images="['1', '2', '3']" :alts="['1', '2', '3']" />
-
-  <quote
-    class="quote"
-    quote="In just a few months – they already have branches expanding from Singapore to Bangkok. And now, secretly brewing six more yellow shops near you."
-  />
+  <info :labels="labels" :items="items" />
 
   <stage
-    class="stage"
-    stage="Desafio"
-    title="An MVP for the tech-enabled store"
-    :paragraphs="[
-      'Multiple customer touchpoints provides a wide opportunity for improving the ordering experience.',
-      'After a series of innovation workshops, the team has decided on perfecting the pickup and delivery process by integrating a mobile app for their consumers.',
-      'With the David & Sebs at the helm of it all, the whole team quickly got into the drawing board – drafting, sharing and skeching their ideas.',
-    ]"
+    :label="labels[4]"
+    :title="stages[0].title"
+    :paragraph="stages[0].paragraph"
   />
 
-  <gallery
-    class="gallery"
-    :images="['1', '1', '1', '1', '1', '1']"
-    :alts="['1', '2', '3', '1', '2', '3']"
-  />
+  <gallery :project="'one'" :indexes="[1, 2, 3]" />
 
   <stage
-    class="stage"
-    stage="Desafio"
-    title="An MVP for the tech-enabled store"
-    :paragraphs="[
-      'Multiple customer touchpoints provides a wide opportunity for improving the ordering experience.',
-      'After a series of innovation workshops, the team has decided on perfecting the pickup and delivery process by integrating a mobile app for their consumers.',
-      'With the David & Sebs at the helm of it all, the whole team quickly got into the drawing board – drafting, sharing and skeching their ideas.',
-    ]"
+    :label="labels[5]"
+    :title="stages[1].title"
+    :paragraph="stages[1].paragraph"
   />
 
-  <gallery
-    class="gallery"
-    :images="['1', '1', '1', '1', '1', '1']"
-    :alts="['1', '2', '3', '1', '2', '3']"
+  <gallery :project="'one'" :indexes="[4]" />
+
+  <highlight :highlight="highlight" />
+
+  <gallery :project="'one'" :indexes="[5, 6, 7]" />
+
+  <stage
+    :label="labels[6]"
+    :title="stages[2].title"
+    :paragraph="stages[2].paragraph"
   />
 
-  <others
-    id="others"
-    :links="['./montehermom', './designsystem']"
-    :titles="['Monte Hermom', 'Design System']"
-    :images="['1', '2']"
-    :alts="['1', '2']"
-  />
+  <gallery :project="'one'" :indexes="[8]" />
 </template>
 
 <script>
+import animation from '@/components/animation.vue';
+import hero from '@/components/hero.vue';
+import info from '@/components/info.vue';
 import stage from '@/components/stage.vue';
-import board from '@/components/board.vue';
-import quote from '../components/quote.vue';
-import gallery from '../components/gallery.vue';
-import others from '@/components/others.vue';
+import gallery from '@/components/gallery.vue';
+import highlight from '@/components/highlight.vue';
 
 export default {
-  name: 'soul',
-  components: { stage, board, quote, gallery, others },
+  name: 'one',
+  components: { animation, hero, info, stage, gallery, highlight },
+
+  // prettier-ignore
+  computed: {
+    hero()      { return this.$i18n.messages[this.$i18n.locale].one.hero; },
+    labels()    { return this.$i18n.messages[this.$i18n.locale].labels; },
+    items()     { return this.$i18n.messages[this.$i18n.locale].one.items; },
+    stages()    { return this.$i18n.messages[this.$i18n.locale].one.stages; },
+    highlight() { return this.$i18n.messages[this.$i18n.locale].one.highlight; },
+  },
 };
 </script>
 
 <style scoped lang="scss">
-#hero {
-  margin-top: 60px;
-  position: relative;
-}
-
 @media only screen and (min-width: 940px) {
-  #hero {
-    margin-top: 150px;
-  }
 }
 </style>

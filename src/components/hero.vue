@@ -35,7 +35,9 @@ export default {
   :deep(.animation) {
     top: -200px;
     right: -200px;
+    left: auto;
     width: 540px;
+    transform: none;
   }
 
   img {
@@ -44,6 +46,7 @@ export default {
     z-index: -1;
   }
 
+  // prettier-ignore
   .texts {
     display: flex;
     flex-direction: column;
@@ -52,14 +55,9 @@ export default {
     margin-top: -16px;
     width: 300px;
 
-    h1 {
-      @include tera;
-    }
-
+    h1 { @include tera; }
     p,
-    :deep(p) {
-      @include micro;
-    }
+    :deep(p) { @include micro; }
   }
 }
 
@@ -79,19 +77,16 @@ export default {
       width: 320px;
     }
 
+    // prettier-ignore
     .texts {
       gap: 32px;
       margin-top: 0;
       width: 420px;
 
-      h1 {
-        @include peta;
-      }
-
+      
+      h1 { @include peta; }
       p,
-      :deep(p) {
-        @include base;
-      }
+      :deep(p) { @include base; }
     }
   }
 }

@@ -1,74 +1,57 @@
 <template>
-  <section>
+  <nav>
     <div class="container">
-      <router-link :to="links[0]">
-        <div>
-          <span><em>Anterior</em></span>
-          <h1>{{ titles[0] }}</h1>
-        </div>
+      <router-link :to="`/portfolio/${projects[0]}`">
+        <span><em v-html="labels[7]"></em></span>
+        <h2 v-html="projects[0]"></h2>
       </router-link>
-      <router-link :to="links[1]">
-        <div>
-          <span><em>Próximo</em></span>
-          <h1>{{ titles[1] }}</h1>
-        </div>
+      <router-link :to="`/portfolio/${projects[1]}`">
+        <span><em v-html="labels[8]"></em></span>
+        <h2 v-html="projects[1]"></h2>
       </router-link>
     </div>
-  </section>
+  </nav>
 </template>
 
 <script>
 export default {
   name: 'others',
-  props: ['links', 'titles'],
+  props: ['projects', 'labels'],
 };
 </script>
 
 <style scoped lang="scss">
-section {
-  margin-bottom: 40px;
-  padding: 60px 0;
-  background-color: rgba(0, 0, 0, 0.3);
+nav {
+  padding: 20px 0;
+  background-color: rgba($navy, 0.6);
 
   .container {
     justify-content: space-between;
 
-    a:first-child {
-      display: none;
-    }
-
+    // prettier-ignore
     a {
-      position: relative;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 350px;
+      flex-direction: column;
 
-      div {
-        z-index: 2;
-
-        span {
-          margin-bottom: 5px;
-          font-size: 18px;
-        }
-
-        h1 {
-          font-size: 36px;
-          font-weight: 600;
-        }
+      &:last-of-type {
+        align-items: flex-end;
       }
+
+      span { @include nano; }
+      h2   { @include base; }
     }
   }
 }
 
 @media only screen and (min-width: 900px) {
-  section {
-    margin-bottom: 60px;
-    padding: 100px 0;
+  nav {
+    padding: 32px 0;
 
     .container {
-      a:first-child {
-        display: flex;
+      // prettier-ignore
+      a {
+        span { @include base; }
+        h2   { @include giga; }
       }
     }
   }
