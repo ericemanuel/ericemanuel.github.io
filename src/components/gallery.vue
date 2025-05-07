@@ -3,7 +3,7 @@
     <div class="container" :length="indexes.length">
       <!-- prettier-ignore -->
       <img v-for="index in indexes"
-        :src="require('@/assets/images/' + project + '_' + String(index) + '.webp')"
+        :src="require('@/assets/images/' + project + '_' + String(index) + '.png')"
       />
     </div>
   </figure>

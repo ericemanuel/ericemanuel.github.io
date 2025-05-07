@@ -73,12 +73,13 @@ $sky: #3298cb;
 $azure: #73afd7;
 $cyan: #38bfc3;
 $white: #fff;
+$flow: -webkit-linear-gradient(0deg, #3298cb, #38bfc3);
 
 /* assignments
 --------------------------------------------- */
 @mixin emphasis {
   font-style: italic;
-  background: -webkit-linear-gradient(0deg, #3298cb, #38bfc3);
+  background: $flow;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

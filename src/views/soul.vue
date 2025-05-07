@@ -1,87 +1,117 @@
 <template>
-  <stage
-    class="stage"
-    stage="Desafio"
-    title="An MVP for the tech-enabled store"
-    :paragraphs="[
-      'Multiple customer touchpoints provides a wide opportunity for improving the ordering experience.',
-      'After a series of innovation workshops, the team has decided on perfecting the pickup and delivery process by integrating a mobile app for their consumers.',
-      'With the David & Sebs at the helm of it all, the whole team quickly got into the drawing board – drafting, sharing and skeching their ideas.',
-    ]"
+  <hero
+    :illustration="hero.illustration"
+    :alt="hero.alt"
+    :title="hero.title"
+    :description="hero.description"
   />
 
-  <board id="board" :images="['1', '2', '3']" :alts="['1', '2', '3']" />
+  <info :labels="labels" :items="items" />
 
-  <quote
-    class="quote"
-    quote="In just a few months – they already have branches expanding from Singapore to Bangkok. And now, secretly brewing six more yellow shops near you."
-  />
+  <player :project="'soul'" />
 
   <stage
-    class="stage"
-    stage="Desafio"
-    title="An MVP for the tech-enabled store"
-    :paragraphs="[
-      'Multiple customer touchpoints provides a wide opportunity for improving the ordering experience.',
-      'After a series of innovation workshops, the team has decided on perfecting the pickup and delivery process by integrating a mobile app for their consumers.',
-      'With the David & Sebs at the helm of it all, the whole team quickly got into the drawing board – drafting, sharing and skeching their ideas.',
-    ]"
+    :label="labels[4]"
+    :title="stages[0].title"
+    :paragraph="stages[0].paragraph"
   />
 
-  <gallery
-    class="gallery"
-    :images="['1', '1', '1', '1', '1', '1']"
-    :alts="['1', '2', '3', '1', '2', '3']"
-  />
+  <gallery :project="'soul'" :indexes="[1, 2, 3]" />
 
   <stage
-    class="stage"
-    stage="Desafio"
-    title="An MVP for the tech-enabled store"
-    :paragraphs="[
-      'Multiple customer touchpoints provides a wide opportunity for improving the ordering experience.',
-      'After a series of innovation workshops, the team has decided on perfecting the pickup and delivery process by integrating a mobile app for their consumers.',
-      'With the David & Sebs at the helm of it all, the whole team quickly got into the drawing board – drafting, sharing and skeching their ideas.',
-    ]"
+    :label="labels[5]"
+    :title="stages[1].title"
+    :paragraph="stages[1].paragraph"
   />
 
-  <gallery
-    class="gallery"
-    :images="['1', '1', '1', '1', '1', '1']"
-    :alts="['1', '2', '3', '1', '2', '3']"
+  <gallery :project="'soul'" :indexes="[4]" />
+
+  <highlight :highlight="highlight" />
+
+  <gallery :project="'soul'" :indexes="[5, 6, 7]" />
+
+  <stage
+    :label="labels[6]"
+    :title="stages[2].title"
+    :paragraph="stages[2].paragraph"
   />
 
-  <others
-    id="others"
-    :links="['./montehermom', './designsystem']"
-    :titles="['Monte Hermom', 'Design System']"
-    :images="['1', '2']"
-    :alts="['1', '2']"
-  />
+  <div class="gallery">
+    <gallery :project="'soul'" :indexes="[8, 9, 10]" />
+    <animation></animation>
+  </div>
+
+  <others :projects="['One', 'Sesc']" :labels="labels" />
 </template>
 
 <script>
+import animation from '@/components/animation.vue';
+import hero from '@/components/hero.vue';
+import info from '@/components/info.vue';
+import player from '../components/player.vue';
 import stage from '@/components/stage.vue';
-import board from '@/components/board.vue';
-import quote from '../components/highlight.vue';
-import gallery from '../components/gallery.vue';
+import gallery from '@/components/gallery.vue';
+import highlight from '@/components/highlight.vue';
 import others from '@/components/others.vue';
 
 export default {
-  name: 'soul',
-  components: { stage, board, quote, gallery, others },
+  name: 'one',
+  components: {
+    animation,
+    hero,
+    info,
+    player,
+    stage,
+    gallery,
+    highlight,
+    others,
+  },
+
+  // prettier-ignore
+  computed: {
+    locale()   { return this.$i18n.messages[this.$i18n.locale]; },
+    
+    hero()      { return this.locale.one.hero; },
+    labels()    { return this.locale.labels; },
+    items()     { return this.locale.one.items; },
+    stages()    { return this.locale.one.stages; },
+    highlight() { return this.locale.one.highlight; },
+    links()     { return this.locale.one.links; },
+    titles()    { return this.locale.one.titles; }
+  },
 };
 </script>
 
 <style scoped lang="scss">
-#hero {
-  margin-top: 60px;
+.gallery {
   position: relative;
+
+  :deep(.animation) {
+    width: 520px;
+  }
+
+  footer {
+    margin-top: -64px;
+  }
 }
 
-@media only screen and (min-width: 940px) {
-  #hero {
-    margin-top: 150px;
+@media only screen and (min-width: 900px) {
+  .gallery {
+    :deep(.animation) {
+      width: 1200px;
+    }
+  }
+}
+</style>
+
+<style>
+footer {
+  margin-top: -80px;
+}
+
+@media only screen and (min-width: 900px) {
+  footer {
+    margin-top: -120px;
   }
 }
 </style>

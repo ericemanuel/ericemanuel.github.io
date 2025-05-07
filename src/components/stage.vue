@@ -2,9 +2,7 @@
   <article>
     <div class="container">
       <div>
-        <span>
-          <em v-html="label"></em>
-        </span>
+        <span><em v-html="label"></em></span>
         <h2 v-html="title"></h2>
       </div>
       <p v-html="paragraph"></p>
@@ -20,6 +18,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+// prettier-ignore
 .container {
   flex-direction: column;
   align-items: flex-start;
@@ -31,34 +30,25 @@ export default {
     gap: 8px;
   }
 
-  h2 {
-    @include kilo;
-  }
-
+  h2 { @include kilo; }
   span,
-  p {
-    @include micro;
-  }
+  p  { @include micro; }
 }
 
 @media only screen and (min-width: 900px) {
+  // prettier-ignore
   .container {
     flex-direction: row;
     gap: 64px;
 
-    span {
-      @include base;
-    }
-
-    h2 {
-      @include mega;
-    }
-
     p {
       margin-top: 32px;
       width: 512px;
-      @include mili;
     }
+    
+    h2   { @include mega; }
+    span,
+    p    { @include base; }
   }
 }
 </style>
