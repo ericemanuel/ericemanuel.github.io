@@ -7,7 +7,7 @@
         :src="require('@/assets/vectors/illustrations/' + illustration + '.svg')"
         :alt="alt"
       />
-      <div class="texts">
+      <div>
         <h1 v-html="title"></h1>
         <hr />
         <p v-html="description"></p>
@@ -47,7 +47,7 @@ export default {
   }
 
   // prettier-ignore
-  .texts {
+  div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -78,10 +78,10 @@ export default {
     }
 
     // prettier-ignore
-    .texts {
+    div {
       gap: 32px;
       margin-top: 0;
-      width: 420px;
+      width: 480px;
 
       
       h1 { @include peta; }

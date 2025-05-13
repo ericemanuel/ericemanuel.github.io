@@ -36,10 +36,7 @@
     :paragraph="stages[2].paragraph"
   />
 
-  <div class="gallery">
-    <gallery :project="'soul'" :indexes="[8, 9, 10]" />
-    <animation></animation>
-  </div>
+  <gallery :project="'soul'" :indexes="[8, 9, 10]" :animation="true" />
 
   <others :projects="['One', 'Sesc']" :labels="labels" />
 </template>
@@ -71,47 +68,13 @@ export default {
   computed: {
     locale()   { return this.$i18n.messages[this.$i18n.locale]; },
     
-    hero()      { return this.locale.one.hero; },
+    hero()      { return this.locale.soul.hero; },
     labels()    { return this.locale.labels; },
-    items()     { return this.locale.one.items; },
-    stages()    { return this.locale.one.stages; },
-    highlight() { return this.locale.one.highlight; },
-    links()     { return this.locale.one.links; },
-    titles()    { return this.locale.one.titles; }
+    items()     { return this.locale.soul.items; },
+    stages()    { return this.locale.soul.stages; },
+    highlight() { return this.locale.soul.highlight; },
+    links()     { return this.locale.soul.links; },
+    titles()    { return this.locale.soul.titles; }
   },
 };
 </script>
-
-<style scoped lang="scss">
-.gallery {
-  position: relative;
-
-  :deep(.animation) {
-    width: 520px;
-  }
-
-  footer {
-    margin-top: -64px;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .gallery {
-    :deep(.animation) {
-      width: 1200px;
-    }
-  }
-}
-</style>
-
-<style>
-footer {
-  margin-top: -80px;
-}
-
-@media only screen and (min-width: 900px) {
-  footer {
-    margin-top: -120px;
-  }
-}
-</style>

@@ -1,13 +1,12 @@
 <template>
   <nav>
     <div class="container">
-      <router-link :to="`/portfolio/${projects[0]}`">
-        <span><em v-html="labels[7]"></em></span>
-        <h2 v-html="projects[0]"></h2>
-      </router-link>
-      <router-link :to="`/portfolio/${projects[1]}`">
-        <span><em v-html="labels[8]"></em></span>
-        <h2 v-html="projects[1]"></h2>
+      <router-link
+        v-for="i in [0, 1]"
+        :to="`/portfolio/${projects[i].toLowerCase().replace(/ /g, '')}`"
+      >
+        <span><em v-html="labels[i + 7]"></em></span>
+        <h2 v-html="projects[i]"></h2>
       </router-link>
     </div>
   </nav>
@@ -16,13 +15,14 @@
 <script>
 export default {
   name: 'others',
-  props: ['projects', 'labels'],
+  props: ['links', 'projects', 'labels'],
 };
 </script>
 
 <style scoped lang="scss">
 nav {
   padding: 20px 0;
+  margin-bottom: -104px;
   background-color: rgba($navy, 0.6);
 
   .container {
@@ -46,6 +46,7 @@ nav {
 @media only screen and (min-width: 900px) {
   nav {
     padding: 32px 0;
+    margin-bottom: -160px;
 
     .container {
       // prettier-ignore

@@ -18,7 +18,7 @@ const routes = [
     component: () => import('../views/soul.vue'),
   },
   {
-    path: '/portfolio/sitedosesc',
+    path: '/portfolio/sesc',
     name: 'sesc',
     component: () => import('../views/sesc.vue'),
   },
@@ -33,9 +33,9 @@ const routes = [
     component: () => import('../views/montehermom.vue'),
   },
   {
-    path: '/portfolio/sesc+',
-    name: 'sesc+',
-    component: () => import('../views/sesc.vue'),
+    path: '/portfolio/sescgo',
+    name: 'sescgo',
+    component: () => import('../views/sescgo.vue'),
   },
 ];
 
