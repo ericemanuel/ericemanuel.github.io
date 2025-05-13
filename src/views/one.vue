@@ -8,14 +8,9 @@
 
   <info :labels="labels" :items="items" />
 
-  <div id="figma">
-    <div class="container">
-      <iframe
-        src="https://embed.figma.com/design/IkIz0LTIGAJKkmJ3rBjzuE/One?node-id=2032-3265&embed-host=share"
-        allowfullscreen
-      ></iframe>
-    </div>
-  </div>
+  <figma
+    :link="'https://embed.figma.com/design/IkIz0LTIGAJKkmJ3rBjzuE/One?node-id=2032-3265&embed-host=share&hide-ui=1'"
+  />
 
   <stage
     :label="labels[4]"
@@ -43,18 +38,16 @@
     :paragraph="stages[2].paragraph"
   />
 
-  <div class="gallery">
-    <gallery :project="'one'" :indexes="[8]" />
-    <animation></animation>
-  </div>
+  <gallery :project="'one'" :indexes="[8]" :animation="true" />
 
-  <others :projects="['Sesc+', 'Soul']" :labels="labels" />
+  <others :projects="['Sesc Go', 'Soul']" :labels="labels" />
 </template>
 
 <script>
 import animation from '@/components/animation.vue';
 import hero from '@/components/hero.vue';
 import info from '@/components/info.vue';
+import figma from '../components/figma.vue';
 import player from '../components/player.vue';
 import stage from '@/components/stage.vue';
 import gallery from '@/components/gallery.vue';
@@ -67,6 +60,7 @@ export default {
     animation,
     hero,
     info,
+    figma,
     player,
     stage,
     gallery,
@@ -88,37 +82,3 @@ export default {
   },
 };
 </script>
-
-<style scoped lang="scss">
-.gallery {
-  position: relative;
-
-  :deep(.animation) {
-    width: 520px;
-  }
-
-  footer {
-    margin-top: -64px;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .gallery {
-    :deep(.animation) {
-      width: 1200px;
-    }
-  }
-}
-</style>
-
-<style>
-footer {
-  margin-top: -80px;
-}
-
-@media only screen and (min-width: 900px) {
-  footer {
-    margin-top: -120px;
-  }
-}
-</style>

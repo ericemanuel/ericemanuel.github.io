@@ -8,7 +8,9 @@
 
   <info :labels="labels" :items="items" />
 
-  <gallery :project="'gamechanger'" :indexes="[1]" />
+  <figma
+    :link="'https://embed.figma.com/design/dgCfY7dMdVVqtloRDMiSMO/Sesc-?node-id=0-1&embed-host=share'"
+  />
 
   <stage
     :label="labels[4]"
@@ -16,7 +18,7 @@
     :paragraph="stages[0].paragraph"
   />
 
-  <gallery :project="'gamechanger'" :indexes="[2, 3, 4]" />
+  <gallery :project="'sescgo'" :indexes="[1, 2, 3]" />
 
   <stage
     :label="labels[5]"
@@ -24,11 +26,11 @@
     :paragraph="stages[1].paragraph"
   />
 
-  <gallery :project="'gamechanger'" :indexes="[5]" />
+  <gallery :project="'sescgo'" :indexes="[4, 5, 6]" />
 
   <highlight :highlight="highlight" />
 
-  <gallery :project="'gamechanger'" :indexes="[6, 7, 8]" />
+  <gallery :project="'sescgo'" :indexes="[7, 8, 9]" />
 
   <stage
     :label="labels[6]"
@@ -36,43 +38,46 @@
     :paragraph="stages[2].paragraph"
   />
 
-  <gallery :project="'gamechanger'" :indexes="[9]" :animation="true" />
+  <gallery :project="'sescgo'" :indexes="[10, 11, 12]" :animation="true" />
 
-  <others :projects="['Sesc', 'Monte Hermom']" :labels="labels" />
+  <others :projects="['Monte Hermom', 'One']" :labels="labels" />
 </template>
 
 <script>
 import animation from '@/components/animation.vue';
 import hero from '@/components/hero.vue';
 import info from '@/components/info.vue';
-import gallery from '@/components/gallery.vue';
+import figma from '../components/figma.vue';
 import stage from '@/components/stage.vue';
+import gallery from '@/components/gallery.vue';
 import highlight from '@/components/highlight.vue';
 import others from '@/components/others.vue';
 
 export default {
-  name: 'gamechanger',
+  name: 'sescgo',
   components: {
     animation,
     hero,
     info,
-    gallery,
+    figma,
     stage,
+    gallery,
+    highlight,
     highlight,
     others,
   },
 
   // prettier-ignore
   computed: {
-    locale()   { return this.$i18n.messages[this.$i18n.locale]; },
+    locale()    { return this.$i18n.messages[this.$i18n.locale]; },
     
-    hero()      { return this.locale.gamechanger.hero; },
+    hero()      { return this.locale.sescgo.hero; },
     labels()    { return this.locale.labels; },
-    items()     { return this.locale.gamechanger.items; },
-    stages()    { return this.locale.gamechanger.stages; },
-    highlight() { return this.locale.gamechanger.highlight; },
-    links()     { return this.locale.gamechanger.links; },
-    titles()    { return this.locale.gamechanger.titles; }
+    items()     { return this.locale.sescgo.items; },
+    stages()    { return this.locale.sescgo.stages; },
+    highlight() { return this.locale.sescgo.highlight; },
+    links()     { return this.locale.sescgo.links; },
+    titles()    { return this.locale.sescgo.titles; }
   },
 };
 </script>

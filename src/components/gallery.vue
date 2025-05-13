@@ -5,14 +5,18 @@
       <img v-for="index in indexes"
         :src="require('@/assets/images/' + project + '_' + String(index) + '.png')"
       />
+      <animation v-if="animation"></animation>
     </div>
   </figure>
 </template>
 
 <script>
+import animation from '@/components/animation.vue';
+
 export default {
   name: 'gallery',
-  props: ['project', 'indexes'],
+  components: { animation },
+  props: ['project', 'indexes', 'animation'],
 };
 </script>
 
@@ -20,6 +24,7 @@ export default {
 .container {
   display: flex;
   gap: 8px;
+  position: relative;
 
   img {
     border-radius: 12px;
@@ -31,6 +36,10 @@ export default {
   &[length='3'] img {
     &:nth-of-type(3n)   { transform: translateY(-24px); }
     &:nth-of-type(3n-2) { transform: translateY(24px); }
+  }
+
+  :deep(.animation) {
+    width: 520px;
   }
 }
 
@@ -46,6 +55,10 @@ export default {
     &[length='3'] img {
       &:nth-of-type(3n)   { transform: translateY(56px); }
       &:nth-of-type(3n-2) { transform: translateY(-56px); }
+    }
+
+    :deep(.animation) {
+      width: 1200px;
     }
   }
 }

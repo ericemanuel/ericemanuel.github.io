@@ -34,33 +34,47 @@
     :paragraph="stages[2].paragraph"
   />
 
-  <gallery :project="'one'" :indexes="[8]" />
+  <gallery :project="'one'" :indexes="[8]" :animation="true" />
+
+  <others :projects="['Game Changer', 'Sesc Go']" :labels="labels" />
 </template>
 
 <script>
 import animation from '@/components/animation.vue';
 import hero from '@/components/hero.vue';
 import info from '@/components/info.vue';
+import figma from '../components/figma.vue';
+import player from '../components/player.vue';
 import stage from '@/components/stage.vue';
 import gallery from '@/components/gallery.vue';
 import highlight from '@/components/highlight.vue';
+import others from '@/components/others.vue';
 
 export default {
   name: 'one',
-  components: { animation, hero, info, stage, gallery, highlight },
+  components: {
+    animation,
+    hero,
+    info,
+    figma,
+    player,
+    stage,
+    gallery,
+    highlight,
+    others,
+  },
 
   // prettier-ignore
   computed: {
-    hero()      { return this.$i18n.messages[this.$i18n.locale].one.hero; },
-    labels()    { return this.$i18n.messages[this.$i18n.locale].labels; },
-    items()     { return this.$i18n.messages[this.$i18n.locale].one.items; },
-    stages()    { return this.$i18n.messages[this.$i18n.locale].one.stages; },
-    highlight() { return this.$i18n.messages[this.$i18n.locale].one.highlight; },
+    locale()   { return this.$i18n.messages[this.$i18n.locale]; },
+    
+    hero()      { return this.locale.montehermom.hero; },
+    labels()    { return this.locale.labels; },
+    items()     { return this.locale.montehermom.items; },
+    stages()    { return this.locale.montehermom.stages; },
+    highlight() { return this.locale.montehermom.highlight; },
+    links()     { return this.locale.montehermom.links; },
+    titles()    { return this.locale.montehermom.titles; }
   },
 };
 </script>
-
-<style scoped lang="scss">
-@media only screen and (min-width: 940px) {
-}
-</style>

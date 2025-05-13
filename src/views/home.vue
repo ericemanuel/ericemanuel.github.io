@@ -107,7 +107,6 @@ export default {
   setup() {
     const onSwiper = () => {
       const pagination = document.querySelector('.swiper-pagination');
-      console.log(innerWidth);
 
       if (innerWidth < 1000) {
         pagination.style.right = (innerWidth - 328) / 2 + 'px';

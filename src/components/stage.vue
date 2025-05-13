@@ -42,8 +42,11 @@ export default {
     gap: 64px;
 
     p {
-      margin-top: 32px;
+      display: flex;
+      flex-shrink: 0;
+      padding-top: 32px;
       width: 512px;
+
     }
     
     h2   { @include mega; }
