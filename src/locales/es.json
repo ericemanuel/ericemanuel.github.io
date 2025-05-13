@@ -4,7 +4,7 @@
       "illustration": "gears",
       "alt": "Engrenajes",
       "title": "Diseñador y desarrollador",
-      "description": "Las soluciones <em>bonitas y funcionales</em> que necesitas, juntas en un solo profesional."
+      "description": "Las soluciones <em>bonitas y funcionales</em> que necesitas, juntas en un solo profesional"
     },
     {
       "illustration": "rocket",
@@ -16,7 +16,7 @@
       "illustration": "head",
       "alt": "Creatividad",
       "title": "Creatividad en todo",
-      "description": "Para cada obra <em>una inspiración única</em>, para cada marca una nueva perspectiva."
+      "description": "Para cada obra <em>una inspiración única</em>, para cada marca una nueva perspectiva"
     },
     {
       "illustration": "fire",
@@ -27,11 +27,11 @@
   ],
 
   "about": {
-    "title": "Las buenas ideas surgen de la combinación de diferentes conocimientos.",
+    "title": "Las buenas ideas surgen de distintos saberes",
     "description": "Estudio Diseño, Desarrollo, Marketing, Estrategia, Música <em>— y hago un ramen increíble!</em>"
   },
 
-  "cards": [
+  "projects": [
     {
       "link": "/portfolio/one",
       "brand": "clearsale",
@@ -80,5 +80,215 @@
       "illustration_alt": "Mapa",
       "title": "La experiencia de explorar"
     }
-  ]
+  ],
+
+  "labels": [
+    "Pareja",
+    "Ubicación",
+    "Año",
+    "Habilidades",
+    "El desafío",
+    "La tecnologia",
+    "El resultado",
+    "Anterior",
+    "Próximo"
+  ],
+
+  "one": {
+    "hero": {
+      "illustration": "globe",
+      "alt": "Globo",
+      "title": "One",
+      "description": "Una interfaz para todos"
+    },
+
+    "items": [
+      "ClearSale",
+      "São Paulo",
+      "2024",
+      ["Diseño", "Investigación", "Estrategia", "Liderazgo"]
+    ],
+
+    "stages": [
+      {
+        "title": "Diseño global y escalable",
+        "paragraph": "El desarrollo de inteligencia antifraude global va mucho más allá del simple procesamiento de datos. Debe crear una experiencia que se adapte a diferentes idiomas, monedas, zonas horarias y dispositivos. Para integrar las aplicaciones desarrolladas por ClearSale, se volvió esencial crear un sistema de diseño robusto, capaz de garantizar escalabilidad, consistencia y eficiencia."
+      },
+      {
+        "title": "Una iniciativa multidisciplinar",
+        "paragraph": "Uno fue desarrollado en base a Material Design 3 y todos sus prototipos se realizaron en Figma, promoviendo la colaboración entre equipos y la validación continua de flujos. Sus componentes fueron implementados como Componentes Web, permitiendo la integración con diferentes frameworks y manteniendo el sistema de diseño de ClearSale eficiente y escalable."
+      },
+      {
+        "title": "Avances locales, impactos globales",
+        "paragraph": "Al final de su primer año, One reemplazó a los portales brasileño e internacional, consolidándose como el principal producto de ClearSale. Desde entonces, ha evolucionado hasta integrar todos los productos de la empresa, unificando tecnología, interfaz y, sobre todo, la experiencia de usuario."
+      }
+    ],
+
+    "highlight": "Global al atender a usuarios de todos los países, pero también satisfaciendo las necesidades internas de la empresa."
+  },
+
+  "soul": {
+    "hero": {
+      "illustration": "mind",
+      "alt": "Mente",
+      "title": "Soul",
+      "description": "Interfaces inconscientes"
+    },
+
+    "items": [
+      "Puc-Rio",
+      "Río de Janeiro",
+      "2014",
+      ["Desarrollo", "Electrónica", "Diseño"]
+    ],
+
+    "stages": [
+      {
+        "title": "Conectando humanos y computadoras",
+        "paragraph": "Comunicar implica más que palabras: los gestos, la entonación y las miradas son parte de ello. Somos complejos, mientras que nuestras computadoras ignoran estos detalles. Si un teléfono móvil pudiera describir a su usuario, tal vez sólo vería una mano con un dedo gigante. Pero ¿qué pasaría si pudiéramos darle a las computadoras un 'alma' que les permitiera comprender aspectos sutiles de la naturaleza humana?"
+      },
+      {
+        "title": "Capturando frecuencias de la conciencia",
+        "paragraph": "Soul utiliza electroencefalografía (EEG) para capturar frecuencias cerebrales y comprender el estado mental del usuario. Con un EEG portátil podemos medir continuamente las frecuencias generadas por el cerebro y nuestros niveles de atención y meditación, permitiendo que el ordenador detecte cambios en el estado mental del usuario en tiempo real, sin que éste se dé cuenta."
+      },
+      {
+        "title": "Un prototipo de iluminación inteligente",
+        "paragraph": "Para probar este concepto, desarrollé una aplicación que controla una lámpara cuyo color e intensidad se ajustan automáticamente a las necesidades inconscientes del usuario, ayudando en tareas como la concentración, la relajación o el sueño. El sistema procesa datos en tiempo real y adapta la iluminación hasta conseguir el objetivo deseado, sin necesidad de intervención del usuario."
+      }
+    ],
+
+    "highlight": "“Si tuviera que resumir tu proyecto en una palabra, elegiría resiliencia”"
+  },
+
+  "sesc": {
+    "hero": {
+      "illustration": "link",
+      "alt": "Enlace",
+      "title": "Sesc",
+      "description": "Conectando culturas"
+    },
+
+    "items": [
+      "Sesc",
+      "Río de Janeiro",
+      "2021",
+      ["Liderazgo", "Investigación", "Tecnología", "Diseño"]
+    ],
+
+    "stages": [
+      {
+        "title": "Conectando personas, servicios y cultura",
+        "paragraph": "Operando en todo Brasil, el Sesc necesitaba una plataforma digital capaz de representar su diversidad de servicios y audiencias. Más que rediseñar un sitio web, el desafío era crear una experiencia inclusiva, accesible y escalable, conectando acciones culturales, deportivas, educativas y sociales de forma fluida e intuitiva."
+      },
+      {
+        "title": "Liderazgo en un proyecto estratégico",
+        "paragraph": "Los equipos de TI, Diseño y Marketing del Sesc trabajaron en sinergia para alinear las necesidades técnicas, la comunicación y la experiencia del usuario. Me correspondía ser el vínculo central entre todas estas áreas, coordinando nuestros procesos y demandas internas y también la empresa externalizada encargada de desarrollar el proyecto, asegurando la coherencia entre la planificación, ejecución y entrega final."
+      },
+      {
+        "title": "Resultados que conectan Brasil con el Sesc",
+        "paragraph": "El nuevo sitio web del Sesc fue lanzado en 2021, en el 75º aniversario de la empresa, y rápidamente se consolidó como uno de los principales canales de promoción de los servicios del Sesc en todo Brasil. Con una interfaz accesible y contenidos organizados, el portal pasó a conectar a millones de brasileños con las acciones de la institución, fortaleciendo su misión social a través de una presencia digital moderna, inclusiva y estratégica."
+      }
+    ],
+
+    "highlight": "“Sesc.com.br ahora refleja la diversidad y el alcance nacional de la institución”"
+  },
+
+  "montehermom": {
+    "hero": {
+      "illustration": "cross",
+      "alt": "Cruz",
+      "title": "Monte Hermon",
+      "description": "Tecnología para dar vida"
+    },
+
+    "items": [
+      "Iglesia Monte Hermón",
+      "Río de Janeiro",
+      "2024",
+      ["Liderazgo", "Planeamiento", "Electrónica"]
+    ],
+
+    "stages": [
+      {
+        "title": "Cuando la técnica se encuentra con la misión",
+        "paragraph": "Adorar es también comunicar. Música, imagen, ambiente y sonido forman una experiencia sensorial única e impactante. En una época en la que la presencia física ya no es la única forma de participar, ¿cómo podemos crear un sistema integrado que no sólo reproduzca estas variables, sino que también las mejore?"
+      },
+      {
+        "title": "Conectando fe y tecnología",
+        "paragraph": "Para hacer realidad este sueño, el sistema de sonido de la iglesia fue diseñado con control 100% digital y respetando las características acústicas del ambiente. Múltiples proyectores alineados y mapeados a través de Resolume transforman el espacio en una gran pantalla. Las cámaras PTZ capturan diferentes ángulos con corte en vivo a través de OBS, permitiendo edición en tiempo real y conexión a todas las redes sociales de la comunidad."
+      },
+      {
+        "title": "Haciendo presente lo invisible",
+        "paragraph": "Hoy en día, la experiencia de adoración en el monte Hermón es atractiva para quienes están en el templo y para quienes la observan desde casa. Los canales de la Iglesia ya llegan a 50 veces más personas de las que caben en los bancos de la iglesia, lo que convierte a la tecnología en un instrumento para transformar vidas."
+      }
+    ],
+
+    "highlight": "“Tecnología cumpliendo el propósito de llevar arte, cultura y esperanza a la vida de las personas”"
+  },
+
+  "gamechanger": {
+    "hero": {
+      "illustration": "block",
+      "alt": "Bloque",
+      "title": "Game Changer",
+      "description": "Innovación y viabilidad en juegos digitales"
+    },
+
+    "items": [
+      "Uerj",
+      "Brasil",
+      "2024",
+      ["Diseño de juegos", "Tecnología", "Innovación"]
+    ],
+
+    "stages": [
+      {
+        "title": "Combinando creatividad y viabilidad",
+        "paragraph": "Para crear un juego exitoso es necesario equilibrar la creatividad, las limitaciones técnicas y las demandas del mercado. Para un desarrollador en solitario, este equilibrio se vuelve aún más desafiante. La gran pregunta es: ¿cómo crear una mecánica de juego que sea viable de implementar por sí sola y, al mismo tiempo, tenga potencial comercial después del lanzamiento?"
+      },
+      {
+        "title": "El juego nace pieza a pieza",
+        "paragraph": "Game Changer es un prototipo de juego de estrategia por turnos, creado en el motor Godot e inspirado en clásicos como Final Fantasy Tactics e Into the Breach. Aquí, cada movimiento transforma el campo de batalla: el terreno puede ser destruido, las unidades pueden ser empujadas en cadena y el escenario cambia con cada decisión, lo que requiere tácticas flexibles y ofrece un desafío estratégico constante."
+      },
+      {
+        "title": "Cambiando el juego",
+        "paragraph": "Como juego, Game Changer ofrece una experiencia estratégica y profundamente original. Pero el proyecto va más allá: es también una investigación práctica sobre lo que se puede crear con pasión, organización y tecnología. Al proporcionar un marco completo de viabilidad –técnica, económica, artística, etc.–, también se consolida como un referente para otros desarrolladores independientes."
+      }
+    ],
+
+    "highlight": "“Colocar, empujar y predecir. La victoria se trata menos de atacar y más de dominar el espacio.”"
+  },
+
+  "sescgo": {
+    "hero": {
+      "illustration": "map",
+      "alt": "Mapa",
+      "title": "Sesc Go",
+      "description": "La experiencia de explorar"
+    },
+
+    "items": [
+      "Sesc",
+      "Río de Janeiro",
+      "2019",
+      ["Tecnología", "Diseño", "Innovación"]
+    ],
+
+    "stages": [
+      {
+        "title": "Centralizando experiencias, conectando personas",
+        "paragraph": "Turismo, deporte, ocio, salud, educación. El Sesc está presente en todo Brasil con un papel amplio y transformador, pero no siempre es fácil para el público acceder a esta información. ¿Y si fuera posible llevar la misma sensación de explorar todo esto en persona al mundo virtual?"
+      },
+      {
+        "title": "Una aplicación, múltiples posibilidades",
+        "paragraph": "Sesc Go es una aplicación enfocada a la exploración y el descubrimiento, que ofrece a los usuarios una visión macro de la institución y también brinda acceso detallado a las actividades de cada una de sus unidades. También fue la primera aplicación del nuevo sistema de diseño de Sesc, que brinda una experiencia moderna, accesible y basada en código abierto."
+      },
+      {
+        "title": "Un ecosistema digital integrado e intuitivo",
+        "paragraph": "El concepto de Sesc+ y el alcance del sistema de diseño facilitaron aún más el acercamiento del Sesc a su público. Combinando visión panorámica y atención al detalle, el proyecto se ha consolidado como un referente en experiencia de usuario e innovación dentro de la empresa y en el sector público-privado."
+      }
+    ],
+
+    "highlight": "“Un viaje de empatía y redescubrimiento de cómo el Sesc se comunica con las personas”"
+  }
 }

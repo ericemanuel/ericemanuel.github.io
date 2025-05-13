@@ -62,7 +62,7 @@ export default {
     const savedLanguage = localStorage.getItem('savedLanguage');
 
     if (savedLanguage && savedLanguage !== this.currentLanguage) {
-      this.changeLanguage(savedLanguage);
+      this.changeTo(savedLanguage);
     }
   },
 };
