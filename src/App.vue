@@ -1,17 +1,16 @@
 <template>
-  <logotype />
+  <top />
   <router-view />
   <logo />
 </template>
 
 <script>
-import animation from '@/components/animation.vue';
-import logotype from '@/components/logotype.vue';
+import top from '@/components/top.vue';
 import logo from '@/components/logo.vue';
 
 export default {
   name: 'App',
-  components: { animation, logotype, logo },
+  components: { top, logo },
 };
 </script>
 
@@ -28,7 +27,7 @@ html {
 #app {
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  gap: 144px;
   padding: 16px 0;
   overflow: hidden;
 }
@@ -41,10 +40,24 @@ html {
   max-width: 328px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  text-wrap: balance;
+}
+
 hr {
   width: 40px;
   box-sizing: border-box;
   border-top: 2px solid $azure;
+}
+
+img {
+  min-width: 0;
 }
 
 video {
@@ -63,7 +76,7 @@ iframe {
   }
 
   #app {
-    gap: 200px;
+    gap: 240px;
     padding: 24px 0;
   }
 
