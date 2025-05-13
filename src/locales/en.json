@@ -4,7 +4,7 @@
       "illustration": "gears",
       "alt": "Gears",
       "title": "Designer and developer",
-      "description": "The <em>beautiful and functional</em> solutions you need, all in one professional."
+      "description": "The <em>beautiful and functional</em> solutions you need, all in one professional"
     },
     {
       "illustration": "rocket",
@@ -16,7 +16,7 @@
       "illustration": "head",
       "alt": "Creativity",
       "title": "Creativity in everything",
-      "description": "For each job <em>a unique inspiration</em>,<br> for each brand a new perspective."
+      "description": "For each job <em>a unique inspiration</em>,<br> for each brand a new perspective"
     },
     {
       "illustration": "fire",
@@ -129,8 +129,8 @@
 
   "soul": {
     "hero": {
-      "illustration": "globe",
-      "alt": "Globe",
+      "illustration": "mind",
+      "alt": "Mind",
       "title": "Soul",
       "description": "Unconscious interfaces"
     },
