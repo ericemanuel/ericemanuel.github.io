@@ -26,6 +26,7 @@ export default {
 <style scoped lang="scss">
 .container {
   display: grid;
+  justify-content: unset;
   gap: 12px;
   grid-template-areas:
     'partner  skills'
