@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
 import home from '../views/home.vue';
 
 const routes = [
@@ -8,39 +8,39 @@ const routes = [
     component: home,
   },
   {
-    path: '/portfolio/one',
+    path: '/one',
     name: 'one',
     component: () => import('../views/one.vue'),
   },
   {
-    path: '/portfolio/soul',
+    path: '/soul',
     name: 'soul',
     component: () => import('../views/soul.vue'),
   },
   {
-    path: '/portfolio/sesc',
+    path: '/sesc',
     name: 'sesc',
     component: () => import('../views/sesc.vue'),
   },
   {
-    path: '/portfolio/gamechanger',
+    path: '/gamechanger',
     name: 'gamechanger',
     component: () => import('../views/gamechanger.vue'),
   },
   {
-    path: '/portfolio/montehermom',
-    name: 'montehermom',
-    component: () => import('../views/montehermom.vue'),
+    path: '/ericemanuel',
+    name: 'ericemanuel',
+    component: () => import('../views/ericemanuel.vue'),
   },
   {
-    path: '/portfolio/sescgo',
+    path: '/sescgo',
     name: 'sescgo',
     component: () => import('../views/sescgo.vue'),
   },
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHashHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
     return {

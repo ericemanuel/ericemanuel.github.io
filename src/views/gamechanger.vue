@@ -38,7 +38,7 @@
 
   <gallery :project="'gamechanger'" :indexes="[9]" :animation="true" />
 
-  <others :projects="['Sesc', 'Monte Hermom']" :labels="labels" />
+  <others :projects="['Sesc', 'Eric Emanuel']" :labels="labels" />
 </template>
 
 <script>

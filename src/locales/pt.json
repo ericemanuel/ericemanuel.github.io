@@ -33,7 +33,7 @@
 
   "projects": [
     {
-      "link": "/portfolio/one",
+      "link": "/one",
       "brand": "clearsale",
       "brand_alt": "ClearSale",
       "illustration": "globe",
@@ -41,7 +41,7 @@
       "title": "Uma interface para todos"
     },
     {
-      "link": "/portfolio/soul",
+      "link": "/soul",
       "brand": "puc-rio",
       "brand_alt": "Puc-Rio",
       "illustration": "mind",
@@ -49,7 +49,7 @@
       "title": "Um app que lê pensamentos"
     },
     {
-      "link": "/portfolio/sitedosesc",
+      "link": "/sesc",
       "brand": "sesc",
       "brand_alt": "Sesc",
       "illustration": "link",
@@ -57,7 +57,7 @@
       "title": "Conectando culturas"
     },
     {
-      "link": "/portfolio/gamechanger",
+      "link": "/gamechanger",
       "brand": "uerj",
       "brand_alt": "Uerj",
       "illustration": "block",
@@ -65,15 +65,15 @@
       "title": "O jogo da inovação"
     },
     {
-      "link": "/portfolio/montehermom",
-      "brand": "montehermom",
-      "brand_alt": "Monte Hermom",
-      "illustration": "cross",
-      "illustration_alt": "Cruz",
-      "title": "Tecnologia para dar vida"
+      "link": "/ericemanuel",
+      "brand": "ee",
+      "brand_alt": "EE",
+      "illustration": "ee",
+      "illustration_alt": "EE",
+      "title": "Minha própria identidade"
     },
     {
-      "link": "/portfolio/sesc+",
+      "link": "/sescgo",
       "brand": "sesc",
       "brand_alt": "Sesc",
       "illustration": "map",
@@ -193,39 +193,6 @@
     "highlight": "“O Sesc.com.br agora reflete a diversidade e o alcance nacional da instituição”"
   },
 
-  "montehermom": {
-    "hero": {
-      "illustration": "cross",
-      "alt": "Cruz",
-      "title": "Monte Hermom",
-      "description": "Tecnologia para dar vida"
-    },
-
-    "items": [
-      "Igreja Monte Hermom",
-      "Rio de Janeiro",
-      "2024",
-      ["Liderança", "Planejamento", "Eletrônica"]
-    ],
-
-    "stages": [
-      {
-        "title": "Quando a técnica encontra a missão",
-        "paragraph": "Cultuar também é comunicar. Música, imagem, ambiente e som formam uma experiência sensorial única e impactante. Em um tempo em que a presença física não é mais a única forma de participar, como criar um sistema integrado que não apenas reproduza essas variáveis, mas também as aprimore?"
-      },
-      {
-        "title": "Conectando fé e tecnologia",
-        "paragraph": "Para tornar esse sonho real, o sistema de som da igreja foi projetado com controle 100% digital e respeitando as características acústicas do ambiente. Múltiplos projetores alinhados e mapeados através do Resolume transformam o espaço em uma grande tela. Câmeras PTZ captam diferentes ângulos com corte ao vivo através do OBS, permitindo a edição em tempo real e conectada a todas as redes sociais da comunidade."
-      },
-      {
-        "title": "Tornando o invisível presente",
-        "paragraph": "Hoje, a experiência de culto na Monte Hermom é envolvente para quem está no templo e para quem assiste de casa. Os canais da Igreja já alcançam um número 50 vezes maior de pessoas do que cabem nos bancos da igreja, tornando a tecnologia um instrumento de transformação de vidas."
-      }
-    ],
-
-    "highlight": "“Tecnologia cumprindo o propósito de levar arte, cultura e esperança para a vida de pessoas”"
-  },
-
   "gamechanger": {
     "hero": {
       "illustration": "block",
@@ -257,6 +224,39 @@
     ],
 
     "highlight": "“Posicionar, empurrar e prever. A vitória é menos sobre atacar e mais sobre dominar o espaço.”"
+  },
+
+  "ericemanuel": {
+    "hero": {
+      "illustration": "ee",
+      "alt": "EE",
+      "title": "Eric Emanuel",
+      "description": "Minha própria identidade"
+    },
+
+    "items": [
+      "Eu, myself y yo",
+      "Meu escritório",
+      "2025",
+      ["Design", "Desenvolvimento", "Tecnologia"]
+    ],
+
+    "stages": [
+      {
+        "title": "Uma linguagem que me representa",
+        "paragraph": "Construir minha própria identidade visual foi um exercício de paciência e autoconhecimento. Eu queria algo que fosse mais do que um portfólio — precisava criar uma linguagem que comunicasse quem sou, como penso e como trabalho. O desafio era traduzir isso em uma experiência visual coesa, profissional e autoral, que se estendesse a todos os pontos de contato da minha apresentação profissional."
+      },
+      {
+        "title": "Do traço ao código",
+        "paragraph": "O primeiro passo foi desenhar uma marca e um design system que traduzissem minha personalidade e estilo. Estruturei todo esse visual no Figma, compondo sistemas tipográficos, tokens e uma biblioteca de componentes reutilizáveis. Essa base culminou na implementação deste mesmo site de forma 1:1 em Vue, com componentização, roteamento dinâmico e SCSS modular."
+      },
+      {
+        "title": "Design de ponta a ponta",
+        "paragraph": "Este projeto reflete minha capacidade de unir sensibilidade artística e domínio técnico em um processo completo — da concepção estética ao design system, da prototipação à implementação. Dominar as tecnologias envolvidas me permite propor soluções viáveis e impactantes. É uma expressão autoral que entrega valor ao transformar intenção em experiência."
+      }
+    ],
+
+    "highlight": "“Este projeto sou eu: em pixels, código e propósito.”"
   },
 
   "sescgo": {
