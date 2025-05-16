@@ -1,7 +1,7 @@
 <template>
   <div class="video">
     <div class="container">
-      <video autoplay loop muted playsinline>
+      <video autoplay playsinline loop controls muted>
         <source
           :src="require('@/assets/videos/' + project + '.webm')"
           type="video/webm"

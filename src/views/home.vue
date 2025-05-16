@@ -192,6 +192,8 @@ export default {
 }
 
 #projects {
+  margin-bottom: -56px;
+
   //prettier-ignore
   .container {
     display: flex;
@@ -260,6 +262,8 @@ export default {
   }
 
   #projects {
+    margin-bottom: -80px;
+
     //prettier-ignore
     .container {
       :deep(.animation) {

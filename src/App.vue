@@ -33,11 +33,12 @@ html {
 }
 
 .container {
-  display: flex;
   position: relative;
+  display: flex;
   align-items: center;
-  margin: 0 auto;
+  justify-content: center;
   max-width: 328px;
+  margin: 0 auto;
 }
 
 h1,

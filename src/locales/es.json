@@ -27,13 +27,13 @@
   ],
 
   "about": {
-    "title": "Las buenas ideas surgen de distintos saberes",
-    "description": "Estudio Diseño, Desarrollo, Marketing, Estrategia, Música <em>— y hago un ramen increíble!</em>"
+    "title": "Buenas ideas nacen del encuentro de conocimientos",
+    "description": "Yo estudio Diseño, Desarrollo, Marketing, Estrategia, Música <em>— y hago un ramen increíble!</em>"
   },
 
   "projects": [
     {
-      "link": "/portfolio/one",
+      "link": "/one",
       "brand": "clearsale",
       "brand_alt": "ClearSale",
       "illustration": "globe",
@@ -41,7 +41,7 @@
       "title": "Una interfaz para todos"
     },
     {
-      "link": "/portfolio/soul",
+      "link": "/soul",
       "brand": "puc-rio",
       "brand_alt": "Puc-Rio",
       "illustration": "mind",
@@ -49,7 +49,7 @@
       "title": "Una app que lee pensamientos"
     },
     {
-      "link": "/portfolio/sitedosesc",
+      "link": "/sesc",
       "brand": "sesc",
       "brand_alt": "Sesc",
       "illustration": "link",
@@ -57,7 +57,7 @@
       "title": "Conectando culturas"
     },
     {
-      "link": "/portfolio/gamechanger",
+      "link": "/gamechanger",
       "brand": "uerj",
       "brand_alt": "Uerj",
       "illustration": "block",
@@ -65,15 +65,15 @@
       "title": "El juego de la innovación"
     },
     {
-      "link": "/portfolio/montehermom",
-      "brand": "montehermom",
-      "brand_alt": "Monte Hermom",
-      "illustration": "cross",
-      "illustration_alt": "Cruz",
-      "title": "Tecnología para dar vida"
+      "link": "/ericemanuel",
+      "brand": "ee",
+      "brand_alt": "EE",
+      "illustration": "ee",
+      "illustration_alt": "EE",
+      "title": "Mi propia identidad"
     },
     {
-      "link": "/portfolio/sesc+",
+      "link": "/sescgo",
       "brand": "sesc",
       "brand_alt": "Sesc",
       "illustration": "map",
@@ -193,45 +193,12 @@
     "highlight": "“Sesc.com.br ahora refleja la diversidad y el alcance nacional de la institución”"
   },
 
-  "montehermom": {
-    "hero": {
-      "illustration": "cross",
-      "alt": "Cruz",
-      "title": "Monte Hermon",
-      "description": "Tecnología para dar vida"
-    },
-
-    "items": [
-      "Iglesia Monte Hermón",
-      "Río de Janeiro",
-      "2024",
-      ["Liderazgo", "Planeamiento", "Electrónica"]
-    ],
-
-    "stages": [
-      {
-        "title": "Cuando la técnica se encuentra con la misión",
-        "paragraph": "Adorar es también comunicar. Música, imagen, ambiente y sonido forman una experiencia sensorial única e impactante. En una época en la que la presencia física ya no es la única forma de participar, ¿cómo podemos crear un sistema integrado que no sólo reproduzca estas variables, sino que también las mejore?"
-      },
-      {
-        "title": "Conectando fe y tecnología",
-        "paragraph": "Para hacer realidad este sueño, el sistema de sonido de la iglesia fue diseñado con control 100% digital y respetando las características acústicas del ambiente. Múltiples proyectores alineados y mapeados a través de Resolume transforman el espacio en una gran pantalla. Las cámaras PTZ capturan diferentes ángulos con corte en vivo a través de OBS, permitiendo edición en tiempo real y conexión a todas las redes sociales de la comunidad."
-      },
-      {
-        "title": "Haciendo presente lo invisible",
-        "paragraph": "Hoy en día, la experiencia de adoración en el monte Hermón es atractiva para quienes están en el templo y para quienes la observan desde casa. Los canales de la Iglesia ya llegan a 50 veces más personas de las que caben en los bancos de la iglesia, lo que convierte a la tecnología en un instrumento para transformar vidas."
-      }
-    ],
-
-    "highlight": "“Tecnología cumpliendo el propósito de llevar arte, cultura y esperanza a la vida de las personas”"
-  },
-
   "gamechanger": {
     "hero": {
       "illustration": "block",
       "alt": "Bloque",
       "title": "Game Changer",
-      "description": "Innovación y viabilidad en juegos digitales"
+      "description": "El juego de la innovación"
     },
 
     "items": [
@@ -257,6 +224,39 @@
     ],
 
     "highlight": "“Colocar, empujar y predecir. La victoria se trata menos de atacar y más de dominar el espacio.”"
+  },
+
+  "ericemanuel": {
+    "hero": {
+      "illustration": "ee",
+      "alt": "EE",
+      "title": "Eric Emanuel",
+      "description": "Mi propia identidad"
+    },
+
+    "items": [
+      "Eu, myself y yo",
+      "Mi oficina",
+      "2025",
+      ["Diseño", "Desarrollo", "Tecnología"]
+    ],
+
+    "stages": [
+      {
+        "title": "Un idioma que me representa",
+        "paragraph": "Construir mi propia identidad visual fue un ejercicio de paciencia y autoconocimiento. Quería algo que fuera más que un portfolio: necesitaba crear un lenguaje que comunicara quién soy, cómo pienso y cómo trabajo. El desafío fue traducir esto en una experiencia visual cohesiva, profesional y autoral que se extendiera a todos los puntos de contacto de mi presentación profesional."
+      },
+      {
+        "title": "Del diseño al código",
+        "paragraph": "El primer paso fue diseñar una marca y un sistema de diseño que reflejara mi personalidad y estilo. Estructuré todo este visual en Figma, componiendo sistemas tipográficos, tokens y una biblioteca de componentes reutilizables. Esta base culminó con la implementación de este mismo sitio de manera 1:1 en Vue, con componentización, enrutamiento dinámico y SCSS modular."
+      },
+      {
+        "title": "Diseño de extremo a extremo",
+        "paragraph": "Este proyecto refleja mi capacidad de unir la sensibilidad artística y el dominio técnico en un proceso completo: desde la concepción estética hasta el sistema de diseño, desde la creación de prototipos hasta la implementación. El dominio de las tecnologías involucradas me permite proponer soluciones viables e impactantes. Es una expresión de autor que aporta valor al transformar la intención en experiencia."
+      }
+    ],
+
+    "highlight": "“Este proyecto soy yo: en píxeles, código y propósito”."
   },
 
   "sescgo": {

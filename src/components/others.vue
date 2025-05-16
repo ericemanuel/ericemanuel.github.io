@@ -3,7 +3,7 @@
     <div class="container">
       <router-link
         v-for="i in [0, 1]"
-        :to="`/portfolio/${projects[i].toLowerCase().replace(/ /g, '')}`"
+        :to="`/${projects[i].toLowerCase().replace(/ /g, '')}`"
       >
         <span><em v-html="labels[i + 7]"></em></span>
         <h2 v-html="projects[i]"></h2>
@@ -22,7 +22,7 @@ export default {
 <style scoped lang="scss">
 nav {
   padding: 20px 0;
-  margin-bottom: -104px;
+  margin-bottom: -96px;
   background-color: rgba($navy, 0.6);
 
   .container {
@@ -46,7 +46,7 @@ nav {
 @media only screen and (min-width: 900px) {
   nav {
     padding: 32px 0;
-    margin-bottom: -160px;
+    margin-bottom: -144px;
 
     .container {
       // prettier-ignore
