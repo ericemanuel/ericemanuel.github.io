@@ -9,7 +9,7 @@
   <info :labels="labels" :items="items" />
 
   <figma
-    :link="'https://embed.figma.com/design/1R5sD07qmGLGCgBvtDQY79/Portfolio?node-id=0-1&embed-host=share&hide-ui=1'"
+    :link="'https://embed.figma.com/design/1R5sD07qmGLGCgBvtDQY79/Portfolio?node-id=1088-1571&embed-host=share'"
   />
 
   <stage
@@ -18,9 +18,7 @@
     :paragraph="stages[0].paragraph"
   />
 
-  <figma
-    :link="'https://embed.figma.com/design/3ruWgulDCGO1yfh927f60i/Design-system?node-id=29-2&embed-host=share&hide-ui=1'"
-  />
+  <gallery :project="'ericemanuel'" :indexes="[1]" />
 
   <stage
     :label="labels[5]"
@@ -28,11 +26,11 @@
     :paragraph="stages[1].paragraph"
   />
 
-  <gallery :project="'ericemanuel'" :indexes="[1]" />
+  <gallery :project="'ericemanuel'" :indexes="[2]" />
 
   <highlight :highlight="highlight" />
 
-  <gallery :project="'ericemanuel'" :indexes="[2, 3, 4]" />
+  <gallery :project="'ericemanuel'" :indexes="[3, 4, 5]" />
 
   <stage
     :label="labels[6]"
@@ -40,7 +38,7 @@
     :paragraph="stages[2].paragraph"
   />
 
-  <gallery :project="'ericemanuel'" :indexes="[5]" :animation="true" />
+  <gallery :project="'ericemanuel'" :indexes="[6]" :animation="true" />
 
   <others :projects="['Game Changer', 'Sesc Go']" :labels="labels" />
 </template>
