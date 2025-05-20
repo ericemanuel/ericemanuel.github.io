@@ -9,7 +9,7 @@
   <info :labels="labels" :items="items" />
 
   <figma
-    :link="'https://embed.figma.com/design/dgCfY7dMdVVqtloRDMiSMO/Sesc-?node-id=0-1&embed-host=share'"
+    :link="'https://embed.figma.com/design/1R5sD07qmGLGCgBvtDQY79/Portfolio?node-id=0-1&embed-host=share'"
   />
 
   <stage
@@ -40,7 +40,7 @@
 
   <gallery :project="'sescgo'" :indexes="[10, 11, 12]" :animation="true" />
 
-  <others :projects="['Monte Hermom', 'One']" :labels="labels" />
+  <others :projects="['Eric Emanuel', 'One']" :labels="labels" />
 </template>
 
 <script>

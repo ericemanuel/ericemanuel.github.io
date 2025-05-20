@@ -25,7 +25,7 @@
   <section id="about">
     <div class="container">
       <div class="picture">
-        <img src="@/assets/images/eric.webp" alt="Eric Emanuel" />
+        <img src="@/assets/images/eric.png" alt="Eric Emanuel" />
         <div class="outline"></div>
       </div>
       <div class="texts">
@@ -34,10 +34,6 @@
         <p v-html="$t('about.description')"></p>
         <!-- prettier-ignore -->
         <div class="links">
-          <icon
-            link="https://wa.me/542212204647"
-            icon="whatsapp" alt="Whatsapp"
-          />
           <icon
             link="https://linkedin.com/in/ericemanuel"
             icon="linkedin" alt="LinkedIn"

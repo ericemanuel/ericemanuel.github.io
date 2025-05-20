@@ -65,12 +65,6 @@ video {
   width: 100%;
 }
 
-iframe {
-  border-radius: 12px;
-  width: 100%;
-  height: 197px;
-}
-
 @media only screen and (min-width: 900px) {
   html {
     background-size: 360px;
@@ -87,11 +81,6 @@ iframe {
 
   hr {
     width: 64px;
-  }
-
-  iframe {
-    border-radius: 24px;
-    height: 540px;
   }
 }
 </style>
